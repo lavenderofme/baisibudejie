@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  LQYTabBarController.h
 //  baisibudejie
 //
 //  Created by shasha on 15/10/20.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface LQYTabBarController : UITabBarController
 
 @end
-

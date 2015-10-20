@@ -9,12 +9,10 @@
 /* Begin PBXBuildFile section */
 		8BCF461C1BD67EF2008F4662 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCF461B1BD67EF2008F4662 /* main.m */; };
 		8BCF461F1BD67EF2008F4662 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCF461E1BD67EF2008F4662 /* AppDelegate.m */; };
-		8BCF46221BD67EF2008F4662 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCF46211BD67EF2008F4662 /* ViewController.m */; };
-		8BCF46251BD67EF2008F4662 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BCF46231BD67EF2008F4662 /* Main.storyboard */; };
 		8BCF46271BD67EF2008F4662 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BCF46261BD67EF2008F4662 /* Assets.xcassets */; };
-		8BCF462A1BD67EF2008F4662 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BCF46281BD67EF2008F4662 /* LaunchScreen.storyboard */; };
 		8BCF46351BD67EF2008F4662 /* baisibudejieTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCF46341BD67EF2008F4662 /* baisibudejieTests.m */; };
 		8BCF46401BD67EF2008F4662 /* baisibudejieUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCF463F1BD67EF2008F4662 /* baisibudejieUITests.m */; };
+		8BFC63FD1BD683B2006DC654 /* LQYTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFC63FC1BD683B2006DC654 /* LQYTabBarController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,11 +37,7 @@
 		8BCF461B1BD67EF2008F4662 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8BCF461D1BD67EF2008F4662 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8BCF461E1BD67EF2008F4662 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8BCF46201BD67EF2008F4662 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8BCF46211BD67EF2008F4662 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		8BCF46241BD67EF2008F4662 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8BCF46261BD67EF2008F4662 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8BCF46291BD67EF2008F4662 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8BCF462B1BD67EF2008F4662 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BCF46301BD67EF2008F4662 /* baisibudejieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = baisibudejieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BCF46341BD67EF2008F4662 /* baisibudejieTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = baisibudejieTests.m; sourceTree = "<group>"; };
@@ -51,6 +45,8 @@
 		8BCF463B1BD67EF2008F4662 /* baisibudejieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = baisibudejieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BCF463F1BD67EF2008F4662 /* baisibudejieUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = baisibudejieUITests.m; sourceTree = "<group>"; };
 		8BCF46411BD67EF2008F4662 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BFC63FB1BD683B2006DC654 /* LQYTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQYTabBarController.h; sourceTree = "<group>"; };
+		8BFC63FC1BD683B2006DC654 /* LQYTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQYTabBarController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,11 +99,8 @@
 			children = (
 				8BCF461D1BD67EF2008F4662 /* AppDelegate.h */,
 				8BCF461E1BD67EF2008F4662 /* AppDelegate.m */,
-				8BCF46201BD67EF2008F4662 /* ViewController.h */,
-				8BCF46211BD67EF2008F4662 /* ViewController.m */,
-				8BCF46231BD67EF2008F4662 /* Main.storyboard */,
-				8BCF46261BD67EF2008F4662 /* Assets.xcassets */,
-				8BCF46281BD67EF2008F4662 /* LaunchScreen.storyboard */,
+				8BFC63FB1BD683B2006DC654 /* LQYTabBarController.h */,
+				8BFC63FC1BD683B2006DC654 /* LQYTabBarController.m */,
 				8BCF462B1BD67EF2008F4662 /* Info.plist */,
 				8BCF461A1BD67EF2008F4662 /* Supporting Files */,
 			);
@@ -117,6 +110,7 @@
 		8BCF461A1BD67EF2008F4662 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8BCF46261BD67EF2008F4662 /* Assets.xcassets */,
 				8BCF461B1BD67EF2008F4662 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -202,6 +196,7 @@
 		8BCF460F1BD67EF2008F4662 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = LQY;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = shasha;
 				TargetAttributes = {
@@ -243,9 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BCF462A1BD67EF2008F4662 /* LaunchScreen.storyboard in Resources */,
 				8BCF46271BD67EF2008F4662 /* Assets.xcassets in Resources */,
-				8BCF46251BD67EF2008F4662 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,8 +263,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BCF46221BD67EF2008F4662 /* ViewController.m in Sources */,
 				8BCF461F1BD67EF2008F4662 /* AppDelegate.m in Sources */,
+				8BFC63FD1BD683B2006DC654 /* LQYTabBarController.m in Sources */,
 				8BCF461C1BD67EF2008F4662 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,25 +299,6 @@
 			targetProxy = 8BCF463C1BD67EF2008F4662 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		8BCF46231BD67EF2008F4662 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8BCF46241BD67EF2008F4662 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		8BCF46281BD67EF2008F4662 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8BCF46291BD67EF2008F4662 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		8BCF46421BD67EF2008F4662 /* Debug */ = {
@@ -411,6 +385,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
 				INFOPLIST_FILE = baisibudejie/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = shasah.baisibudejie;
@@ -422,6 +397,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
 				INFOPLIST_FILE = baisibudejie/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = shasah.baisibudejie;
@@ -496,6 +472,7 @@
 				8BCF46461BD67EF2008F4662 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8BCF46471BD67EF2008F4662 /* Build configuration list for PBXNativeTarget "baisibudejieTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +481,7 @@
 				8BCF46491BD67EF2008F4662 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8BCF464A1BD67EF2008F4662 /* Build configuration list for PBXNativeTarget "baisibudejieUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +490,7 @@
 				8BCF464C1BD67EF2008F4662 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
