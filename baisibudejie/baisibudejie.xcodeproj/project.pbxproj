@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B6455381BD69253009CB9D3 /* LQYEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6455371BD69253009CB9D3 /* LQYEssenceViewController.m */; settings = {ASSET_TAGS = (); }; };
+		8B64553B1BD69265009CB9D3 /* LQYNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B64553A1BD69265009CB9D3 /* LQYNewViewController.m */; settings = {ASSET_TAGS = (); }; };
+		8B64553E1BD692A7009CB9D3 /* LQYFriendTrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B64553D1BD692A7009CB9D3 /* LQYFriendTrendsViewController.m */; settings = {ASSET_TAGS = (); }; };
+		8B6455411BD692B0009CB9D3 /* LQYMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6455401BD692B0009CB9D3 /* LQYMeViewController.m */; settings = {ASSET_TAGS = (); }; };
 		8BCF461C1BD67EF2008F4662 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCF461B1BD67EF2008F4662 /* main.m */; };
 		8BCF461F1BD67EF2008F4662 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCF461E1BD67EF2008F4662 /* AppDelegate.m */; };
 		8BCF46271BD67EF2008F4662 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BCF46261BD67EF2008F4662 /* Assets.xcassets */; };
@@ -33,6 +37,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8B6455361BD69253009CB9D3 /* LQYEssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQYEssenceViewController.h; sourceTree = "<group>"; };
+		8B6455371BD69253009CB9D3 /* LQYEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQYEssenceViewController.m; sourceTree = "<group>"; };
+		8B6455391BD69265009CB9D3 /* LQYNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQYNewViewController.h; sourceTree = "<group>"; };
+		8B64553A1BD69265009CB9D3 /* LQYNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQYNewViewController.m; sourceTree = "<group>"; };
+		8B64553C1BD692A7009CB9D3 /* LQYFriendTrendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQYFriendTrendsViewController.h; sourceTree = "<group>"; };
+		8B64553D1BD692A7009CB9D3 /* LQYFriendTrendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQYFriendTrendsViewController.m; sourceTree = "<group>"; };
+		8B64553F1BD692B0009CB9D3 /* LQYMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQYMeViewController.h; sourceTree = "<group>"; };
+		8B6455401BD692B0009CB9D3 /* LQYMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQYMeViewController.m; sourceTree = "<group>"; };
 		8BCF46171BD67EF2008F4662 /* baisibudejie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = baisibudejie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BCF461B1BD67EF2008F4662 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8BCF461D1BD67EF2008F4662 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -101,6 +113,14 @@
 				8BCF461E1BD67EF2008F4662 /* AppDelegate.m */,
 				8BFC63FB1BD683B2006DC654 /* LQYTabBarController.h */,
 				8BFC63FC1BD683B2006DC654 /* LQYTabBarController.m */,
+				8B6455361BD69253009CB9D3 /* LQYEssenceViewController.h */,
+				8B6455371BD69253009CB9D3 /* LQYEssenceViewController.m */,
+				8B6455391BD69265009CB9D3 /* LQYNewViewController.h */,
+				8B64553A1BD69265009CB9D3 /* LQYNewViewController.m */,
+				8B64553C1BD692A7009CB9D3 /* LQYFriendTrendsViewController.h */,
+				8B64553D1BD692A7009CB9D3 /* LQYFriendTrendsViewController.m */,
+				8B64553F1BD692B0009CB9D3 /* LQYMeViewController.h */,
+				8B6455401BD692B0009CB9D3 /* LQYMeViewController.m */,
 				8BCF462B1BD67EF2008F4662 /* Info.plist */,
 				8BCF461A1BD67EF2008F4662 /* Supporting Files */,
 			);
@@ -263,8 +283,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B6455381BD69253009CB9D3 /* LQYEssenceViewController.m in Sources */,
 				8BCF461F1BD67EF2008F4662 /* AppDelegate.m in Sources */,
+				8B6455411BD692B0009CB9D3 /* LQYMeViewController.m in Sources */,
 				8BFC63FD1BD683B2006DC654 /* LQYTabBarController.m in Sources */,
+				8B64553E1BD692A7009CB9D3 /* LQYFriendTrendsViewController.m in Sources */,
+				8B64553B1BD69265009CB9D3 /* LQYNewViewController.m in Sources */,
 				8BCF461C1BD67EF2008F4662 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

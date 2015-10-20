@@ -7,6 +7,10 @@
 //
 
 #import "LQYTabBarController.h"
+#import "LQYEssenceViewController.h"
+#import "LQYNewViewController.h"
+#import "LQYFriendTrendsViewController.h"
+#import "LQYMeViewController.h"
 
 @interface LQYTabBarController ()
 
@@ -16,11 +20,25 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+    // 设置 tabBar 的文字属性
+    [self setupTabBarAttributes];
+    
+    // 添加子控制器
+    [self addChildViewCOntrollers];
+    
+    
+}
+/**
+ *  统一设置设置 tabBar 的文字属性
+ */
+- (void)setupTabBarAttributes
+{
     /*
      - (void)setTitleTextAttributes:(nullable NSDictionary<NSString *,id> *)attributes forState:(UIControlState)state NS_AVAILABLE_IOS(5_0) UI_APPEARANCE_SELECTOR;
      
      1.方法或者属性后面有个UI_APPEARANCE_SELECTOR宏,才可以通过appearance对象统一设置
-    */
+     */
     // 普通状态下的文字
     NSMutableDictionary *normalAttributes = [NSMutableDictionary dictionary];
     normalAttributes[NSForegroundColorAttributeName] = [UIColor grayColor];
@@ -30,42 +48,39 @@
     selectAttributes[NSForegroundColorAttributeName] = [UIColor darkGrayColor];
     
     UITabBarItem *item = [UITabBarItem appearance];
-    
     [item setTitleTextAttributes:normalAttributes forState:UIControlStateNormal];
     [item setTitleTextAttributes:selectAttributes forState:UIControlStateSelected];
-
-    // 添加自控制器
-    UIViewController *vc1 = [[UIViewController alloc]init];
-    vc1.view.backgroundColor = [UIColor redColor];
-    vc1.tabBarItem.title = @"精华";
-    // 设置图片
-    vc1.tabBarItem.image = [UIImage imageNamed:@"tabBar_essence_icon"];
-    vc1.tabBarItem.selectedImage = [[UIImage imageNamed:@"tabBar_essence_click_icon"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    [self addChildViewController:vc1];
     
-    UIViewController *vc2 = [[UIViewController alloc]init];
-    vc2.view.backgroundColor = [UIColor grayColor];
-    vc2.tabBarItem.title = @"新帖";
-    // 设置图片
-    vc2.tabBarItem.image = [UIImage imageNamed:@"tabBar_new_icon"];
-    vc2.tabBarItem.selectedImage = [[UIImage imageNamed:@"tabBar_new_click_icon"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    [self addChildViewController:vc2];
-    
-    UIViewController *vc3 = [[UIViewController alloc]init];
-    vc3.view.backgroundColor = [UIColor yellowColor];
-    vc3.tabBarItem.title = @"关注";
-    // 设置图片
-    vc3.tabBarItem.image = [UIImage imageNamed:@"tabBar_friendTrends_icon"];
-    vc3.tabBarItem.selectedImage = [[UIImage imageNamed:@"tabBar_friendTrends_click_icon"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    [self addChildViewController:vc3];
-    
-    UIViewController *vc4 = [[UIViewController alloc]init];
-    vc4.view.backgroundColor = [UIColor greenColor];
-    vc4.tabBarItem.title = @"我";
-    // 设置图片
-    vc4.tabBarItem.image = [UIImage imageNamed:@"tabBar_me_icon"];
-    vc4.tabBarItem.selectedImage = [[UIImage imageNamed:@"tabBar_me_click_icon"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    [self addChildViewController:vc4];
 }
+
+/**
+ *  添加子控制器
+ */
+- (void)addChildViewCOntrollers
+{
+    // 精华
+    [self addOneChildViewController:[[LQYEssenceViewController alloc]init] title:@"精华" normalImage:@"tabBar_essence_icon"  selectImage:@"tabBar_essence_click_icon"];
+    
+    // 新帖
+    [self addOneChildViewController:[[LQYNewViewController alloc]init] title:@"新帖" normalImage:@"tabBar_new_icon" selectImage:@"tabBar_new_click_icon"];
+    
+    // 关注
+    [self addOneChildViewController:[[LQYNewViewController alloc]init] title:@"关注" normalImage:@"tabBar_friendTrends_icon"selectImage:@"tabBar_friendTrends_click_icon"];
+    
+    // 我
+    [self addOneChildViewController:[[LQYNewViewController alloc]init]title:@"我" normalImage:@"tabBar_me_icon"selectImage:@"tabBar_me_click_icon"];
+}
+
+- (void)addOneChildViewController:(UIViewController *)vc title:(NSString *)title normalImage:(NSString *)normalImage selectImage:(NSString *)selectImage
+{
+    
+    vc.view.backgroundColor = [UIColor grayColor];
+    vc.tabBarItem.title = title;
+    // 设置图片
+    vc.tabBarItem.image = [UIImage imageNamed: normalImage];
+    vc.tabBarItem.selectedImage = [[UIImage imageNamed:selectImage] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    [self addChildViewController:vc];
+}
+
 
 @end
