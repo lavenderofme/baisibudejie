@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B06A2651BD78C8A000C0347 /* LQYTest1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B06A2641BD78C8A000C0347 /* LQYTest1ViewController.m */; settings = {ASSET_TAGS = (); }; };
+		8B12D6CC1BD7823F009FC706 /* LQYNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B12D6CB1BD7823F009FC706 /* LQYNavigationController.m */; settings = {ASSET_TAGS = (); }; };
+		8B12D6CF1BD78744009FC706 /* LQYTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B12D6CE1BD78744009FC706 /* LQYTestViewController.m */; settings = {ASSET_TAGS = (); }; };
 		8B6455741BD73EBA009CB9D3 /* LQYEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6455521BD73EBA009CB9D3 /* LQYEssenceViewController.m */; settings = {ASSET_TAGS = (); }; };
 		8B6455751BD73EBA009CB9D3 /* LQYFriendTrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6455581BD73EBA009CB9D3 /* LQYFriendTrendsViewController.m */; settings = {ASSET_TAGS = (); }; };
 		8B6455761BD73EBA009CB9D3 /* LQYMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B64555E1BD73EBA009CB9D3 /* LQYMeViewController.m */; settings = {ASSET_TAGS = (); }; };
@@ -16,6 +19,7 @@
 		8B64557A1BD73EBA009CB9D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B64556E1BD73EBA009CB9D3 /* main.m */; settings = {ASSET_TAGS = (); }; };
 		8B64557B1BD73EBA009CB9D3 /* LQYTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6455731BD73EBA009CB9D3 /* LQYTabBar.m */; settings = {ASSET_TAGS = (); }; };
 		8B6A083F1BD770A900BA98D1 /* UIBarButtonItem+LQYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6A083E1BD770A900BA98D1 /* UIBarButtonItem+LQYExtension.m */; settings = {ASSET_TAGS = (); }; };
+		8B6A08421BD7790D00BA98D1 /* LQYSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6A08411BD7790D00BA98D1 /* LQYSettingController.m */; settings = {ASSET_TAGS = (); }; };
 		8BCF46271BD67EF2008F4662 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BCF46261BD67EF2008F4662 /* Assets.xcassets */; };
 		8BCF46351BD67EF2008F4662 /* baisibudejieTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCF46341BD67EF2008F4662 /* baisibudejieTests.m */; };
 		8BCF46401BD67EF2008F4662 /* baisibudejieUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCF463F1BD67EF2008F4662 /* baisibudejieUITests.m */; };
@@ -39,6 +43,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8B06A2631BD78C8A000C0347 /* LQYTest1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQYTest1ViewController.h; sourceTree = "<group>"; };
+		8B06A2641BD78C8A000C0347 /* LQYTest1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQYTest1ViewController.m; sourceTree = "<group>"; };
+		8B12D6CA1BD7823F009FC706 /* LQYNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQYNavigationController.h; sourceTree = "<group>"; };
+		8B12D6CB1BD7823F009FC706 /* LQYNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQYNavigationController.m; sourceTree = "<group>"; };
+		8B12D6CD1BD78744009FC706 /* LQYTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQYTestViewController.h; sourceTree = "<group>"; };
+		8B12D6CE1BD78744009FC706 /* LQYTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQYTestViewController.m; sourceTree = "<group>"; };
 		8B6455511BD73EBA009CB9D3 /* LQYEssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQYEssenceViewController.h; sourceTree = "<group>"; };
 		8B6455521BD73EBA009CB9D3 /* LQYEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQYEssenceViewController.m; sourceTree = "<group>"; };
 		8B6455571BD73EBA009CB9D3 /* LQYFriendTrendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQYFriendTrendsViewController.h; sourceTree = "<group>"; };
@@ -57,6 +67,8 @@
 		8B6455731BD73EBA009CB9D3 /* LQYTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQYTabBar.m; sourceTree = "<group>"; };
 		8B6A083D1BD770A900BA98D1 /* UIBarButtonItem+LQYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+LQYExtension.h"; sourceTree = "<group>"; };
 		8B6A083E1BD770A900BA98D1 /* UIBarButtonItem+LQYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+LQYExtension.m"; sourceTree = "<group>"; };
+		8B6A08401BD7790D00BA98D1 /* LQYSettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQYSettingController.h; sourceTree = "<group>"; };
+		8B6A08411BD7790D00BA98D1 /* LQYSettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQYSettingController.m; sourceTree = "<group>"; };
 		8BCF46171BD67EF2008F4662 /* baisibudejie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = baisibudejie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BCF46261BD67EF2008F4662 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8BCF462B1BD67EF2008F4662 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -153,6 +165,8 @@
 			children = (
 				8B6455571BD73EBA009CB9D3 /* LQYFriendTrendsViewController.h */,
 				8B6455581BD73EBA009CB9D3 /* LQYFriendTrendsViewController.m */,
+				8B12D6CD1BD78744009FC706 /* LQYTestViewController.h */,
+				8B12D6CE1BD78744009FC706 /* LQYTestViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -186,6 +200,10 @@
 			children = (
 				8B64555D1BD73EBA009CB9D3 /* LQYMeViewController.h */,
 				8B64555E1BD73EBA009CB9D3 /* LQYMeViewController.m */,
+				8B6A08401BD7790D00BA98D1 /* LQYSettingController.h */,
+				8B6A08411BD7790D00BA98D1 /* LQYSettingController.m */,
+				8B06A2631BD78C8A000C0347 /* LQYTest1ViewController.h */,
+				8B06A2641BD78C8A000C0347 /* LQYTest1ViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -266,6 +284,8 @@
 			children = (
 				8B64556C1BD73EBA009CB9D3 /* LQYTabBarController.h */,
 				8B64556D1BD73EBA009CB9D3 /* LQYTabBarController.m */,
+				8B12D6CA1BD7823F009FC706 /* LQYNavigationController.h */,
+				8B12D6CB1BD7823F009FC706 /* LQYNavigationController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -474,11 +494,15 @@
 				8B64557B1BD73EBA009CB9D3 /* LQYTabBar.m in Sources */,
 				8B6A083F1BD770A900BA98D1 /* UIBarButtonItem+LQYExtension.m in Sources */,
 				8B6455791BD73EBA009CB9D3 /* LQYTabBarController.m in Sources */,
+				8B12D6CF1BD78744009FC706 /* LQYTestViewController.m in Sources */,
 				8B6455771BD73EBA009CB9D3 /* LQYNewViewController.m in Sources */,
 				8B6455761BD73EBA009CB9D3 /* LQYMeViewController.m in Sources */,
+				8B6A08421BD7790D00BA98D1 /* LQYSettingController.m in Sources */,
 				8B6455741BD73EBA009CB9D3 /* LQYEssenceViewController.m in Sources */,
+				8B06A2651BD78C8A000C0347 /* LQYTest1ViewController.m in Sources */,
 				8B6455751BD73EBA009CB9D3 /* LQYFriendTrendsViewController.m in Sources */,
 				8B64557A1BD73EBA009CB9D3 /* main.m in Sources */,
+				8B12D6CC1BD7823F009FC706 /* LQYNavigationController.m in Sources */,
 				8B6455781BD73EBA009CB9D3 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

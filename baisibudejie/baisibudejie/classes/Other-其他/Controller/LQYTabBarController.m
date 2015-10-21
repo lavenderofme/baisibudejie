@@ -12,6 +12,7 @@
 #import "LQYFriendTrendsViewController.h"
 #import "LQYMeViewController.h"
 #import "LQYTabBar.h"
+#import "LQYNavigationController.h"
 
 @interface LQYTabBarController ()
 
@@ -64,16 +65,16 @@
 - (void)addChildViewCOntrollers
 {
     // 精华
-    [self addOneChildViewController:[[UINavigationController alloc]initWithRootViewController:[[LQYEssenceViewController alloc]init]] title:@"精华" normalImage:@"tabBar_essence_icon"  selectImage:@"tabBar_essence_click_icon"];
+    [self addOneChildViewController:[[LQYNavigationController alloc]initWithRootViewController:[[LQYEssenceViewController alloc]init]] title:@"精华" normalImage:@"tabBar_essence_icon"  selectImage:@"tabBar_essence_click_icon"];
     
     // 新帖
-    [self addOneChildViewController:[[UINavigationController alloc]initWithRootViewController:[[LQYNewViewController alloc]init]]title:@"新帖" normalImage:@"tabBar_new_icon" selectImage:@"tabBar_new_click_icon"];
+    [self addOneChildViewController:[[LQYNavigationController alloc]initWithRootViewController:[[LQYNewViewController alloc]init]]title:@"新帖" normalImage:@"tabBar_new_icon" selectImage:@"tabBar_new_click_icon"];
     
     // 关注
-    [self addOneChildViewController:[[UINavigationController alloc]initWithRootViewController:[[LQYFriendTrendsViewController alloc]init]] title:@"关注" normalImage:@"tabBar_friendTrends_icon"selectImage:@"tabBar_friendTrends_click_icon"];
+    [self addOneChildViewController:[[LQYNavigationController alloc]initWithRootViewController:[[LQYFriendTrendsViewController alloc]init]] title:@"关注" normalImage:@"tabBar_friendTrends_icon"selectImage:@"tabBar_friendTrends_click_icon"];
     
     // 我
-    [self addOneChildViewController:[[UINavigationController alloc]initWithRootViewController:[[LQYMeViewController alloc]init]]title:@"我" normalImage:@"tabBar_me_icon"selectImage:@"tabBar_me_click_icon"];
+    [self addOneChildViewController:[[LQYNavigationController alloc]initWithRootViewController:[[LQYMeViewController alloc]init]]title:@"我" normalImage:@"tabBar_me_icon"selectImage:@"tabBar_me_click_icon"];
 }
 
 /**
@@ -86,7 +87,6 @@
  */
 - (void)addOneChildViewController:(UIViewController *)vc title:(NSString *)title normalImage:(NSString *)normalImage selectImage:(NSString *)selectImage
 {
-    vc.view.backgroundColor = LQYRandomColor;
     vc.tabBarItem.title = title;
     // 设置图片
     vc.tabBarItem.image = [UIImage imageNamed: normalImage];

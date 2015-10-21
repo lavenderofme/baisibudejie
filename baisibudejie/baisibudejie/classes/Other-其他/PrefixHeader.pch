@@ -8,6 +8,8 @@
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 
+#ifdef __OBJC__
+
 #import "UIBarButtonItem+LQYExtension.h"
 
 #ifdef DEBUG // 调试阶段
@@ -18,7 +20,11 @@
 
 #define NSLogFun NSLog(@"%s",__func__);
 // 颜色
-#define LQYColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0/255.0 blue:(b)/255.0 alpha:1.0]
+#define LQYColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
 #define LQYColorA(r,g,b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0/255.0 blue:(b)/255.0 alpha:(a)/255.0]
 #define LQYRandomColor LQYColor(arc4random_uniform(255),arc4random_uniform(255),arc4random_uniform(255))
+#define LQYGrayColor(v) LQYColor(v,v,v)
+#define LQYCommonBgColor LQYGrayColor(206)
+
+#endif
 #endif /* PrefixHeader_pch */

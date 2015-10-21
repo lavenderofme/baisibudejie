@@ -7,6 +7,7 @@
 //
 
 #import "LQYFriendTrendsViewController.h"
+#import "LQYTestViewController.h"
 
 @interface LQYFriendTrendsViewController ()
 
@@ -17,6 +18,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    // 设置背景颜色
+    self.view.backgroundColor = LQYCommonBgColor;
+    
     // 设置导航栏的标题
     self.navigationItem.title = @"我的关注";
     
@@ -26,7 +30,7 @@
 
 - (void)friendsRecommentClick
 {
-    NSLogFun;
+    [self.navigationController pushViewController:[[LQYTestViewController alloc]init] animated:YES];
 }
 
 @end

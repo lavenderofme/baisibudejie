@@ -7,6 +7,7 @@
 //
 
 #import "LQYMeViewController.h"
+#import "LQYSettingController.h"
 
 @interface LQYMeViewController ()
 
@@ -16,6 +17,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    // 设置背景颜色
+    self.view.backgroundColor = LQYCommonBgColor;
     
     // 设置导航栏的标题
     self.navigationItem.title = @"我的";
@@ -36,7 +40,8 @@
 
 - (void)mineSettingClick
 {
-    NSLogFun;          
+    LQYSettingController *setting = [[LQYSettingController alloc]init];
+    [self.navigationController pushViewController:setting animated:YES];
 }
 
 @end

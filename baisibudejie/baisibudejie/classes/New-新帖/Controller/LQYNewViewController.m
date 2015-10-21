@@ -17,6 +17,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    // 设置背景颜色
+    self.view.backgroundColor = LQYCommonBgColor;
+    
     // 设置导航栏的标题
     self.navigationItem.titleView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"MainTitle"]];
     

@@ -22,6 +22,9 @@
 {
     if (self = [super initWithFrame:frame]) {
         
+        // 设置tabBar 的背景图片
+        self.backgroundImage = [UIImage imageNamed:@"tabbar-light"];
+        
         // 添加发布按钮
         UIButton *pubshButton = [[UIButton alloc]init];
         // 设置图片
@@ -30,9 +33,8 @@
         [pubshButton sizeToFit];
         // 添加到 tabBar 上
         [self addSubview:pubshButton];
-        
         self.pubshButton = pubshButton;
-
+        
     }
     return self;
 }
