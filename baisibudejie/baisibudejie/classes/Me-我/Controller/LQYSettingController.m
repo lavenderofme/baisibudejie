@@ -19,7 +19,6 @@
     [super viewDidLoad];
     self.navigationItem.title = @"设置";
     
- 
 }
 
 #pragma mark - Table view data source

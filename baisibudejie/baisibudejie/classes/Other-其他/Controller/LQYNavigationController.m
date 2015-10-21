@@ -39,13 +39,10 @@
         [backButton setTitleColor:[UIColor redColor] forState:UIControlStateHighlighted];
         [backButton setTitle:@"返回" forState:UIControlStateNormal];
         //backButton.titleLabel.font = [UIFont systemFontOfSize:16]
-        backButton.contentEdgeInsets = UIEdgeInsetsMake(0, -15, 0, 0);
-
         [backButton sizeToFit];
         
         [backButton addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
-        
-        
+        backButton.contentEdgeInsets = UIEdgeInsetsMake(0, -15, 0, 0);
         viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:backButton];
     }
     // 将控制器 push到栈中
@@ -54,7 +51,9 @@
 
 - (void)back
 {
-    [self popToRootViewControllerAnimated:YES];
+    // pop 掉栈顶控制器
+    [self popViewControllerAnimated:YES];
+    NSLogFun;
 }
 
 #pragma mark - <UIGestureRecognizerDelegate>
