@@ -11,7 +11,6 @@
 #import "LQYNewViewController.h"
 #import "LQYFriendTrendsViewController.h"
 #import "LQYMeViewController.h"
-#import "LQYTestViewController.h"
 #import "LQYTabBar.h"
 
 @interface LQYTabBarController ()
