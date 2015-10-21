@@ -17,21 +17,26 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    // 设置导航栏的标题
     self.navigationItem.title = @"我的";
     
-    UIButton *right1 = [[UIButton alloc]init];
-    [right1 sizeToFit];
-    [right1 setImage:[UIImage imageNamed:@"mine-moon-icon"] forState:UIControlStateNormal];
-    [right1 setImage:[UIImage imageNamed:@"mine-moon-icon-click"] forState:UIControlStateHighlighted];
-    UIButton *right2 = [[UIButton alloc]init];
-    [right2 sizeToFit];
-    [right2 setImage:[UIImage imageNamed:@"mine-setting-icon"] forState:UIControlStateNormal];
-    [right2 setImage:[UIImage imageNamed:@"mine-setting-icon-click"] forState:UIControlStateHighlighted];
-    UIBarButtonItem *rightItem1 = [[UIBarButtonItem alloc]initWithCustomView:right1];
-    UIBarButtonItem *rightItem2 = [[UIBarButtonItem alloc]initWithCustomView:right2];
+    //设置导航栏的按钮
+    UIBarButtonItem *rightItem1 = [UIBarButtonItem itemWithImage:@"mine-moon-icon" highImage:@"mine-moon-icon-click" target:self action:@selector(mineMoonClick)];
+    UIBarButtonItem *rightItem2 = [UIBarButtonItem itemWithImage:@"mine-setting-icon" highImage:@"mine-setting-icon-click" target:self action:@selector(mineSettingClick)];
     
     self.navigationItem.rightBarButtonItems = @[rightItem2,rightItem1];
    
+}
+
+#pragma mark - 监听按钮点击
+- (void)mineMoonClick
+{
+    NSLogFun;
+}
+
+- (void)mineSettingClick
+{
+    NSLogFun;          
 }
 
 @end

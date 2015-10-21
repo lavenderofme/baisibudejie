@@ -17,15 +17,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    // 设置导航栏的标题
     self.navigationItem.titleView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"MainTitle"]];
-    UIButton *leftItem = [[UIButton alloc]init];
-    // 设置按钮的尺寸
-    [leftItem sizeToFit];
-    [leftItem setImage:[UIImage imageNamed:@"MainTagSubIcon"] forState:UIControlStateNormal];
-    [leftItem setImage:[UIImage imageNamed:@"MainTagSubIconClick"] forState:UIControlStateHighlighted];
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:leftItem];
+
+    // 设置导航栏的按钮
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:@"MainTagSubIcon" highImage:@"MainTagSubIconClick" target:self action:@selector(mainTagSubClick)];
     
 }
 
+#pragma mark - 监听按钮点击
+- (void)mainTagSubClick
+{
+    NSLogFun;
+}
 
 @end

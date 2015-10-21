@@ -8,6 +8,8 @@
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 
+#import "UIBarButtonItem+LQYExtension.h"
+
 #ifdef DEBUG // 调试阶段
 #define LQYNSLog(...) NSLog(_VA_ARGS)
 #else // 打包发布阶段
