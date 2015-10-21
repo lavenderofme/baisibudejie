@@ -12,6 +12,7 @@
 		8B64553E1BD692A7009CB9D3 /* LQYFriendTrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B64553D1BD692A7009CB9D3 /* LQYFriendTrendsViewController.m */; settings = {ASSET_TAGS = (); }; };
 		8B6455411BD692B0009CB9D3 /* LQYMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6455401BD692B0009CB9D3 /* LQYMeViewController.m */; settings = {ASSET_TAGS = (); }; };
 		8B6455471BD71DAC009CB9D3 /* LQYTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6455461BD71DAC009CB9D3 /* LQYTestViewController.m */; settings = {ASSET_TAGS = (); }; };
+		8B64554D1BD73198009CB9D3 /* LQYTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B64554C1BD73198009CB9D3 /* LQYTabBar.m */; settings = {ASSET_TAGS = (); }; };
 		8BCF461C1BD67EF2008F4662 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCF461B1BD67EF2008F4662 /* main.m */; };
 		8BCF461F1BD67EF2008F4662 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCF461E1BD67EF2008F4662 /* AppDelegate.m */; };
 		8BCF46271BD67EF2008F4662 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BCF46261BD67EF2008F4662 /* Assets.xcassets */; };
@@ -49,6 +50,8 @@
 		8B6455451BD71DAC009CB9D3 /* LQYTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQYTestViewController.h; sourceTree = "<group>"; };
 		8B6455461BD71DAC009CB9D3 /* LQYTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQYTestViewController.m; sourceTree = "<group>"; };
 		8B64554A1BD721F9009CB9D3 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		8B64554B1BD73198009CB9D3 /* LQYTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQYTabBar.h; sourceTree = "<group>"; };
+		8B64554C1BD73198009CB9D3 /* LQYTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQYTabBar.m; sourceTree = "<group>"; };
 		8BCF46171BD67EF2008F4662 /* baisibudejie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = baisibudejie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BCF461B1BD67EF2008F4662 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8BCF461D1BD67EF2008F4662 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -130,6 +133,8 @@
 				8B6455451BD71DAC009CB9D3 /* LQYTestViewController.h */,
 				8B6455461BD71DAC009CB9D3 /* LQYTestViewController.m */,
 				8B64554A1BD721F9009CB9D3 /* PrefixHeader.pch */,
+				8B64554B1BD73198009CB9D3 /* LQYTabBar.h */,
+				8B64554C1BD73198009CB9D3 /* LQYTabBar.m */,
 			);
 			path = baisibudejie;
 			sourceTree = "<group>";
@@ -296,6 +301,7 @@
 				8BFC63FD1BD683B2006DC654 /* LQYTabBarController.m in Sources */,
 				8B64553E1BD692A7009CB9D3 /* LQYFriendTrendsViewController.m in Sources */,
 				8B64553B1BD69265009CB9D3 /* LQYNewViewController.m in Sources */,
+				8B64554D1BD73198009CB9D3 /* LQYTabBar.m in Sources */,
 				8BCF461C1BD67EF2008F4662 /* main.m in Sources */,
 				8B6455471BD71DAC009CB9D3 /* LQYTestViewController.m in Sources */,
 			);
