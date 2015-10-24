@@ -11,6 +11,7 @@
 #ifdef __OBJC__
 
 #import "UIBarButtonItem+LQYExtension.h"
+#import "UIView+LQYExtension.h"
 
 #ifdef DEBUG // 调试阶段
 #define LQYNSLog(...) NSLog(_VA_ARGS)

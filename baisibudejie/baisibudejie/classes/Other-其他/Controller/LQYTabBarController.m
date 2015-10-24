@@ -64,14 +64,17 @@
  */
 - (void)addChildViewCOntrollers
 {
+    // 关注
+    LQYFriendTrendsViewController *friendTrends = [UIStoryboard storyboardWithName:@"LQYFriendTrendsViewController" bundle:nil].instantiateInitialViewController;
+    [self addOneChildViewController:[[LQYNavigationController alloc]initWithRootViewController:friendTrends] title:@"关注" normalImage:@"tabBar_friendTrends_icon"selectImage:@"tabBar_friendTrends_click_icon"];
+    
     // 精华
     [self addOneChildViewController:[[LQYNavigationController alloc]initWithRootViewController:[[LQYEssenceViewController alloc]init]] title:@"精华" normalImage:@"tabBar_essence_icon"  selectImage:@"tabBar_essence_click_icon"];
     
     // 新帖
     [self addOneChildViewController:[[LQYNavigationController alloc]initWithRootViewController:[[LQYNewViewController alloc]init]]title:@"新帖" normalImage:@"tabBar_new_icon" selectImage:@"tabBar_new_click_icon"];
     
-    // 关注
-    [self addOneChildViewController:[[LQYNavigationController alloc]initWithRootViewController:[[LQYFriendTrendsViewController alloc]init]] title:@"关注" normalImage:@"tabBar_friendTrends_icon"selectImage:@"tabBar_friendTrends_click_icon"];
+    
     
     // 我
     [self addOneChildViewController:[[LQYNavigationController alloc]initWithRootViewController:[[LQYMeViewController alloc]init]]title:@"我" normalImage:@"tabBar_me_icon"selectImage:@"tabBar_me_click_icon"];

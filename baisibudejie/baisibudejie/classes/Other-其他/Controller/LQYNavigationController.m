@@ -51,6 +51,8 @@
 
 - (void)back
 {
+    // pop 到导航控制器的根控制器
+    // [self popToRootViewControllerAnimated:YES];
     // pop 掉栈顶控制器
     [self popViewControllerAnimated:YES];
     NSLogFun;

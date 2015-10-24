@@ -7,7 +7,6 @@
 //
 
 #import "LQYFriendTrendsViewController.h"
-#import "LQYTestViewController.h"
 
 @interface LQYFriendTrendsViewController ()
 
@@ -27,10 +26,16 @@
     // 设置导航栏的按钮
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:@"friendsRecommentIcon" highImage:@"friendsRecommentIcon-click" target:self action:@selector(friendsRecommentClick)];
 }
-
+/**
+ *  左上角按钮
+ */
 - (void)friendsRecommentClick
 {
-    [self.navigationController pushViewController:[[LQYTestViewController alloc]init] animated:YES];
+    NSLogFun;
 }
 
+- (IBAction)backToFriendTrendsViewController:(UIStoryboardSegue *)segue
+{
+    NSLog(@"______");
+}
 @end
