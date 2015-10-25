@@ -7,6 +7,8 @@
 //
 
 #import "LQYSquareButton.h"
+#import <UIButton+WebCache.h>
+#import "LQYSquare.h"
 
 @implementation LQYSquareButton
 
@@ -36,5 +38,13 @@
     self.titleLabel.y = self.imageView.bottom;
     self.titleLabel.width = self.width;
     self.titleLabel.height = self.height - self.titleLabel.y;
+}
+
+- (void)setSquare:(LQYSquare *)square
+{
+    _square = square;
+    
+    [self setTitle:square.name forState:UIControlStateNormal];
+    [self sd_setImageWithURL:[NSURL URLWithString:square.icon] forState:UIControlStateNormal];
 }
 @end

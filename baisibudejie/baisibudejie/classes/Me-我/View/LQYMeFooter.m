@@ -7,11 +7,11 @@
 //
 
 #import "LQYMeFooter.h"
-#import <UIButton+WebCache.h>
 #import <MJExtension.h>
 #import "LQYHTTPSessionManager.h"
 #import "LQYSquare.h"
 #import "LQYSquareButton.h"
+#import "LQYWebViewController.h"
 
 @interface LQYMeFooter()
 
@@ -37,8 +37,6 @@
 - (instancetype)initWithFrame:(CGRect)frame
 {
     if (self = [super initWithFrame:frame]) {
-        
-        //self.backgroundColor = [UIColor yellowColor];
         
         // 请求参数
         NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
@@ -70,7 +68,8 @@
     for (int i = 0; i < count; i++) {
         
         LQYSquareButton *button = [LQYSquareButton buttonWithType:UIButtonTypeCustom];
-       // button.backgroundColor = LQYRandomColor;
+    
+        [button addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
         // 把按钮添加到 footerView 上
         [self addSubview:button];
         // 设置按钮的 frame
@@ -79,9 +78,7 @@
         button.frame  = CGRectMake(buttonX, buttonY, buttonW, buttonH);
         
         // 给按钮设置数据
-        LQYSquare *square = squares[i];
-        [button setTitle:square.name forState:UIControlStateNormal];
-        [button sd_setImageWithURL:[NSURL URLWithString:square.icon] forState:UIControlStateNormal];
+        button.square = squares[i];
         
     }
     
@@ -90,5 +87,33 @@
     // 设置footer的高度 == 总行数 * 一个按钮的高度
     self.height = rowsCount * buttonH;
 }
+- (void)buttonClick:(LQYSquareButton *)button
+{
+    NSString *url = button.square.url;
+    
+    if ([url hasPrefix:@"mod://"]) {// 特殊处理
+        if ([url hasSuffix:@"BDJ_To_Check"]) {
+            NSLog(@"跳转到Check控制器");
+        } else if ([url hasSuffix:@"App_To_SearchUser"]) {
+            NSLog(@"跳转到SearchUser控制器");
+        }
+    } else if ([url hasPrefix:@"http://"]){
+        
+        // 获得当前的导航控制器
+        UITabBarController *tab = (UITabBarController *)self.window.rootViewController;
+        
+        UINavigationController *nav = tab.selectedViewController;
+        
+        // push 到其他控制器
+        LQYWebViewController *web = [[LQYWebViewController alloc]init];
+        web.url = url;
+        web.navigationItem.title = button.square.name;
+        [nav pushViewController:web animated:YES];
+        
+    }else {
+        NSLog(@"其他");
 
+    }
+    
+}
 @end

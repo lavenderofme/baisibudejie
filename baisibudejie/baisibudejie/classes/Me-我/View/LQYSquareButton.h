@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+@class LQYSquare;
 
 @interface LQYSquareButton : UIButton
 
+@property (nonatomic, strong) LQYSquare *square; /**< 方块模型 */
 @end

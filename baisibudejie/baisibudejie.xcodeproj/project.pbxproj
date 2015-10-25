@@ -29,6 +29,8 @@
 		8BAA92471BDB795B0064F694 /* LQYRecommendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BAA92451BDB795B0064F694 /* LQYRecommendCell.m */; settings = {ASSET_TAGS = (); }; };
 		8BAA92481BDB795B0064F694 /* LQYRecommendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BAA92461BDB795B0064F694 /* LQYRecommendCell.xib */; settings = {ASSET_TAGS = (); }; };
 		8BAA924B1BDB80E90064F694 /* LQYRecommend.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BAA924A1BDB80E90064F694 /* LQYRecommend.m */; settings = {ASSET_TAGS = (); }; };
+		8BBF190D1BDD296B00B2FC61 /* LQYWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BBF190B1BDD296B00B2FC61 /* LQYWebViewController.m */; settings = {ASSET_TAGS = (); }; };
+		8BBF190E1BDD296B00B2FC61 /* LQYWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BBF190C1BDD296B00B2FC61 /* LQYWebViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		8BCF46271BD67EF2008F4662 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BCF46261BD67EF2008F4662 /* Assets.xcassets */; };
 		8BCF46351BD67EF2008F4662 /* baisibudejieTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCF46341BD67EF2008F4662 /* baisibudejieTests.m */; };
 		8BCF46401BD67EF2008F4662 /* baisibudejieUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCF463F1BD67EF2008F4662 /* baisibudejieUITests.m */; };
@@ -103,6 +105,9 @@
 		8BAA92461BDB795B0064F694 /* LQYRecommendCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LQYRecommendCell.xib; sourceTree = "<group>"; };
 		8BAA92491BDB80E90064F694 /* LQYRecommend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQYRecommend.h; sourceTree = "<group>"; };
 		8BAA924A1BDB80E90064F694 /* LQYRecommend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQYRecommend.m; sourceTree = "<group>"; };
+		8BBF190A1BDD296B00B2FC61 /* LQYWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQYWebViewController.h; sourceTree = "<group>"; };
+		8BBF190B1BDD296B00B2FC61 /* LQYWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQYWebViewController.m; sourceTree = "<group>"; };
+		8BBF190C1BDD296B00B2FC61 /* LQYWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LQYWebViewController.xib; sourceTree = "<group>"; };
 		8BCF46171BD67EF2008F4662 /* baisibudejie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = baisibudejie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BCF46261BD67EF2008F4662 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8BCF462B1BD67EF2008F4662 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -271,6 +276,9 @@
 				8B64555E1BD73EBA009CB9D3 /* LQYMeViewController.m */,
 				8B6A08401BD7790D00BA98D1 /* LQYSettingController.h */,
 				8B6A08411BD7790D00BA98D1 /* LQYSettingController.m */,
+				8BBF190A1BDD296B00B2FC61 /* LQYWebViewController.h */,
+				8BBF190B1BDD296B00B2FC61 /* LQYWebViewController.m */,
+				8BBF190C1BDD296B00B2FC61 /* LQYWebViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -563,6 +571,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BBF190E1BDD296B00B2FC61 /* LQYWebViewController.xib in Resources */,
 				8BEE20801BD7E7DE00B49C3B /* LQYFriendTrendsViewController.storyboard in Resources */,
 				8BCF46271BD67EF2008F4662 /* Assets.xcassets in Resources */,
 				8BAA92481BDB795B0064F694 /* LQYRecommendCell.xib in Resources */,
@@ -648,6 +657,7 @@
 				8B81ABA71BDCE7EE00FCAB70 /* LQYHTTPSessionManager.m in Sources */,
 				8BFB72511BDB13C60013D7A6 /* LQYQuickLoginButton.m in Sources */,
 				8B1F47541BDC6C5700D12672 /* LQYConst.m in Sources */,
+				8BBF190D1BDD296B00B2FC61 /* LQYWebViewController.m in Sources */,
 				8B6455781BD73EBA009CB9D3 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
