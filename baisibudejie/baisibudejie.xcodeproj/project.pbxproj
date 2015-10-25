@@ -20,6 +20,8 @@
 		8B64557B1BD73EBA009CB9D3 /* LQYTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6455731BD73EBA009CB9D3 /* LQYTabBar.m */; settings = {ASSET_TAGS = (); }; };
 		8B6A083F1BD770A900BA98D1 /* UIBarButtonItem+LQYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6A083E1BD770A900BA98D1 /* UIBarButtonItem+LQYExtension.m */; settings = {ASSET_TAGS = (); }; };
 		8B6A08421BD7790D00BA98D1 /* LQYSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6A08411BD7790D00BA98D1 /* LQYSettingController.m */; settings = {ASSET_TAGS = (); }; };
+		8B81ABA11BDC97F800FCAB70 /* UIImage+LQYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B81ABA01BDC97F800FCAB70 /* UIImage+LQYExtension.m */; settings = {ASSET_TAGS = (); }; };
+		8B81ABA41BDC9B0500FCAB70 /* UIImageView+LQYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B81ABA31BDC9B0500FCAB70 /* UIImageView+LQYExtension.m */; settings = {ASSET_TAGS = (); }; };
 		8B966AE91BDB7320001294EB /* LQYLoginRegisterTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B966AE81BDB7320001294EB /* LQYLoginRegisterTextField.m */; settings = {ASSET_TAGS = (); }; };
 		8B9693101BDB5F5C00E03479 /* UIView+LQYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B96930F1BDB5F5C00E03479 /* UIView+LQYExtension.m */; settings = {ASSET_TAGS = (); }; };
 		8BAA92401BDB78A10064F694 /* LQYRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BAA923F1BDB78A10064F694 /* LQYRecommendViewController.m */; settings = {ASSET_TAGS = (); }; };
@@ -80,6 +82,10 @@
 		8B6A083E1BD770A900BA98D1 /* UIBarButtonItem+LQYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+LQYExtension.m"; sourceTree = "<group>"; };
 		8B6A08401BD7790D00BA98D1 /* LQYSettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQYSettingController.h; sourceTree = "<group>"; };
 		8B6A08411BD7790D00BA98D1 /* LQYSettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQYSettingController.m; sourceTree = "<group>"; };
+		8B81AB9F1BDC97F800FCAB70 /* UIImage+LQYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+LQYExtension.h"; sourceTree = "<group>"; };
+		8B81ABA01BDC97F800FCAB70 /* UIImage+LQYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+LQYExtension.m"; sourceTree = "<group>"; };
+		8B81ABA21BDC9B0500FCAB70 /* UIImageView+LQYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+LQYExtension.h"; sourceTree = "<group>"; };
+		8B81ABA31BDC9B0500FCAB70 /* UIImageView+LQYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+LQYExtension.m"; sourceTree = "<group>"; };
 		8B966AE71BDB7320001294EB /* LQYLoginRegisterTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQYLoginRegisterTextField.h; sourceTree = "<group>"; };
 		8B966AE81BDB7320001294EB /* LQYLoginRegisterTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQYLoginRegisterTextField.m; sourceTree = "<group>"; };
 		8B96930E1BDB5F5C00E03479 /* UIView+LQYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LQYExtension.h"; sourceTree = "<group>"; };
@@ -330,6 +336,10 @@
 				8B6A083E1BD770A900BA98D1 /* UIBarButtonItem+LQYExtension.m */,
 				8B96930E1BDB5F5C00E03479 /* UIView+LQYExtension.h */,
 				8B96930F1BDB5F5C00E03479 /* UIView+LQYExtension.m */,
+				8B81AB9F1BDC97F800FCAB70 /* UIImage+LQYExtension.h */,
+				8B81ABA01BDC97F800FCAB70 /* UIImage+LQYExtension.m */,
+				8B81ABA21BDC9B0500FCAB70 /* UIImageView+LQYExtension.h */,
+				8B81ABA31BDC9B0500FCAB70 /* UIImageView+LQYExtension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -596,6 +606,7 @@
 				8B64557B1BD73EBA009CB9D3 /* LQYTabBar.m in Sources */,
 				8B6A083F1BD770A900BA98D1 /* UIBarButtonItem+LQYExtension.m in Sources */,
 				8B9693101BDB5F5C00E03479 /* UIView+LQYExtension.m in Sources */,
+				8B81ABA41BDC9B0500FCAB70 /* UIImageView+LQYExtension.m in Sources */,
 				8BAA92471BDB795B0064F694 /* LQYRecommendCell.m in Sources */,
 				8B966AE91BDB7320001294EB /* LQYLoginRegisterTextField.m in Sources */,
 				8BAA924B1BDB80E90064F694 /* LQYRecommend.m in Sources */,
@@ -608,6 +619,7 @@
 				8BFB724E1BDB0F0C0013D7A6 /* LQYLoginRegisterViewController.m in Sources */,
 				8B06A2651BD78C8A000C0347 /* LQYTest1ViewController.m in Sources */,
 				8B6455751BD73EBA009CB9D3 /* LQYFriendTrendsViewController.m in Sources */,
+				8B81ABA11BDC97F800FCAB70 /* UIImage+LQYExtension.m in Sources */,
 				8B64557A1BD73EBA009CB9D3 /* main.m in Sources */,
 				8B12D6CC1BD7823F009FC706 /* LQYNavigationController.m in Sources */,
 				8BFB72511BDB13C60013D7A6 /* LQYQuickLoginButton.m in Sources */,

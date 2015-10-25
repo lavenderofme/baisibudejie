@@ -8,7 +8,6 @@
 
 #import "LQYRecommendCell.h"
 #import "LQYRecommend.h"
-#import <UIImageView+WebCache.h>
 
 @interface LQYRecommendCell()
 @property (weak, nonatomic) IBOutlet UIImageView *imageList;
@@ -24,8 +23,7 @@
 {
     _recommend = recommend;
     
-    // 通过第三方框架 SDWebImage 来设置图片, SDWebImage 已经处理好了图片的缓存问题
-    [self.imageList sd_setImageWithURL:[NSURL URLWithString:recommend.image_list] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]];
+    [self.imageList setHeaderWithUrl:recommend.image_list];
     self.themeName.text = recommend.theme_name;
     
     if (recommend.sub_number > 10000) {
