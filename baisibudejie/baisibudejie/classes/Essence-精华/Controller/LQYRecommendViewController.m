@@ -9,6 +9,7 @@
 #import "LQYRecommendViewController.h"
 #import <AFNetworking.h>
 #import <MJExtension.h>
+#import <SVProgressHUD.h>
 #import "LQYRecommendCell.h"
 #import "LQYRecommend.h"
 
@@ -17,11 +18,25 @@
 /**< 所以的标签数据(存放LQYRecommend数组模型) */
 @property (nonatomic, strong) NSArray <LQYRecommend *> *recommends;
 
+/** 请求管理者 */
+@property (nonatomic, strong) AFHTTPSessionManager *manager;
+
 @end
 
 static NSString *const recomendId = @"recomend";
 
 @implementation LQYRecommendViewController
+
+#pragma mark - 懒加载
+/** 请求管理者 属性的懒加载 */
+- (AFHTTPSessionManager *)manager
+{
+    if (!_manager) {
+        _manager = [[AFHTTPSessionManager alloc] init];
+    }
+    return _manager;
+}
+
 
 #pragma mark - 初始化操作
 - (void)viewDidLoad {
@@ -59,22 +74,48 @@ static NSString *const recomendId = @"recomend";
  */ 
 - (void)loadNewRecommendTags
 {
+    // 弹出蒙版
+    [SVProgressHUD show];
+    
     // 请求参数
     NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
     parameters[@"a"] = @"tag_recommend";
     parameters[@"action"] = @"sub";
     parameters[@"c"] = @"topic";
     
-    [[AFHTTPSessionManager manager]GET:LQYRequestUrl parameters:parameters success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
+    [self.manager GET:LQYRequestUrl parameters:parameters success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
         
         self.recommends = [LQYRecommend objectArrayWithKeyValuesArray:responseObject];
         
         // 刷新表格
         [self.tableView reloadData];
-    } failure:^(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error) {
         
-        NSLog(@"%@",error);
+        // 移除蒙版
+        [SVProgressHUD dismiss];
+    } failure:^(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error) {
+        // 移除蒙版
+        [SVProgressHUD dismiss];
+        
     }];
+
+}
+
+/**
+ *  1.当前控制器的 view 即将消失是取消所有的请求
+ *  2.将添加的蒙版移除
+ *  作用 :防止网上过慢时
+ */
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    
+    [SVProgressHUD dismiss];
+    
+    // 取消当前的所有请求
+    [self.manager invalidateSessionCancelingTasks:YES
+     ];
+    
+    
 }
 
 #pragma mark -  tableView数据源

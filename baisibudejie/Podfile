@@ -5,3 +5,5 @@ pod "MJExtension"
 pod "AFNetworking"
 
 pod "SDWebImage"
+
+pod "SVProgressHUD"
