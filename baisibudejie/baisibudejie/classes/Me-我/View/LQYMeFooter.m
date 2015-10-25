@@ -38,6 +38,8 @@
 {
     if (self = [super initWithFrame:frame]) {
         
+        //self.backgroundColor = [UIColor yellowColor];
+        
         // 请求参数
         NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
         parameters[@"a"] = @"square";
@@ -68,7 +70,7 @@
     for (int i = 0; i < count; i++) {
         
         LQYSquareButton *button = [LQYSquareButton buttonWithType:UIButtonTypeCustom];
-        button.backgroundColor = LQYRandomColor;
+       // button.backgroundColor = LQYRandomColor;
         // 把按钮添加到 footerView 上
         [self addSubview:button];
         // 设置按钮的 frame
@@ -82,6 +84,11 @@
         [button sd_setImageWithURL:[NSURL URLWithString:square.icon] forState:UIControlStateNormal];
         
     }
+    
+    // 总行数 == (总个数 + 每行的最大个数 - 1) / 每行的最大个数
+    NSInteger rowsCount = (count + columnsCount - 1) / columnsCount;
+    // 设置footer的高度 == 总行数 * 一个按钮的高度
+    self.height = rowsCount * buttonH;
 }
 
 @end
