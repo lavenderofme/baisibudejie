@@ -7,7 +7,7 @@
 //
 
 #import "LQYRecommendViewController.h"
-#import <AFNetworking.h>
+#import "LQYHTTPSessionManager.h"
 #import <MJExtension.h>
 #import <SVProgressHUD.h>
 #import "LQYRecommendCell.h"
@@ -19,7 +19,7 @@
 @property (nonatomic, strong) NSArray <LQYRecommend *> *recommends;
 
 /** 请求管理者 */
-@property (nonatomic, strong) AFHTTPSessionManager *manager;
+@property (nonatomic, strong) LQYHTTPSessionManager *manager;
 
 @end
 
@@ -29,10 +29,10 @@ static NSString *const recomendId = @"recomend";
 
 #pragma mark - 懒加载
 /** 请求管理者 属性的懒加载 */
-- (AFHTTPSessionManager *)manager
+- (LQYHTTPSessionManager *)manager
 {
     if (!_manager) {
-        _manager = [[AFHTTPSessionManager alloc] init];
+        _manager = [LQYHTTPSessionManager manager];
     }
     return _manager;
 }

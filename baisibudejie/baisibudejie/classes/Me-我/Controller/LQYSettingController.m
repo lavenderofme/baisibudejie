@@ -7,7 +7,7 @@
 //
 
 #import "LQYSettingController.h"
-#import "LQYTest1ViewController.h"
+
 
 @interface LQYSettingController ()
 
@@ -21,8 +21,7 @@
     
 }
 
-#pragma mark - Table view data source
-
+#pragma mark - Table view数据源方法
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return 50;
@@ -38,8 +37,4 @@
     return cell;
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    [self.navigationController pushViewController:[[LQYTest1ViewController alloc]init] animated:YES];
-}
 @end
