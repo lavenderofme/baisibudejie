@@ -7,6 +7,7 @@
 //
 
 #import "LQYEssenceViewController.h"
+#import "LQYRecommendViewController.h"
 
 @interface LQYEssenceViewController ()
 
@@ -31,7 +32,8 @@
 #pragma mark - 监听按钮点击
 - (void)mainTagSubClick
 {
-    NSLogFun;
+    LQYRecommendViewController *recommend = [[LQYRecommendViewController alloc]init];
+    [self.navigationController pushViewController:recommend animated:YES];
 }
 
 @end

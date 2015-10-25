@@ -12,6 +12,7 @@
 
 #import "UIBarButtonItem+LQYExtension.h"
 #import "UIView+LQYExtension.h"
+#import "LQYConst.h"
 
 #ifdef DEBUG // 调试阶段
 #define LQYNSLog(...) NSLog(_VA_ARGS)
@@ -26,6 +27,9 @@
 #define LQYRandomColor LQYColor(arc4random_uniform(255),arc4random_uniform(255),arc4random_uniform(255))
 #define LQYGrayColor(v) LQYColor(v,v,v)
 #define LQYCommonBgColor LQYGrayColor(206)
+
+
+#define LQYWriteToPlist(obj, filename) [obj writeToFile:[NSString stringWithFormat:@"/Users/shasha/Desktop/%@.plist", filename] atomically:YES]
 
 #endif
 #endif /* PrefixHeader_pch */

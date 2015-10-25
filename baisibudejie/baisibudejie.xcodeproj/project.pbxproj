@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8B06A2651BD78C8A000C0347 /* LQYTest1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B06A2641BD78C8A000C0347 /* LQYTest1ViewController.m */; settings = {ASSET_TAGS = (); }; };
 		8B12D6CC1BD7823F009FC706 /* LQYNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B12D6CB1BD7823F009FC706 /* LQYNavigationController.m */; settings = {ASSET_TAGS = (); }; };
+		8B1F47541BDC6C5700D12672 /* LQYConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B1F47531BDC6C5700D12672 /* LQYConst.m */; settings = {ASSET_TAGS = (); }; };
 		8B6455741BD73EBA009CB9D3 /* LQYEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6455521BD73EBA009CB9D3 /* LQYEssenceViewController.m */; settings = {ASSET_TAGS = (); }; };
 		8B6455751BD73EBA009CB9D3 /* LQYFriendTrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6455581BD73EBA009CB9D3 /* LQYFriendTrendsViewController.m */; settings = {ASSET_TAGS = (); }; };
 		8B6455761BD73EBA009CB9D3 /* LQYMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B64555E1BD73EBA009CB9D3 /* LQYMeViewController.m */; settings = {ASSET_TAGS = (); }; };
@@ -21,12 +22,17 @@
 		8B6A08421BD7790D00BA98D1 /* LQYSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6A08411BD7790D00BA98D1 /* LQYSettingController.m */; settings = {ASSET_TAGS = (); }; };
 		8B966AE91BDB7320001294EB /* LQYLoginRegisterTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B966AE81BDB7320001294EB /* LQYLoginRegisterTextField.m */; settings = {ASSET_TAGS = (); }; };
 		8B9693101BDB5F5C00E03479 /* UIView+LQYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B96930F1BDB5F5C00E03479 /* UIView+LQYExtension.m */; settings = {ASSET_TAGS = (); }; };
+		8BAA92401BDB78A10064F694 /* LQYRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BAA923F1BDB78A10064F694 /* LQYRecommendViewController.m */; settings = {ASSET_TAGS = (); }; };
+		8BAA92471BDB795B0064F694 /* LQYRecommendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BAA92451BDB795B0064F694 /* LQYRecommendCell.m */; settings = {ASSET_TAGS = (); }; };
+		8BAA92481BDB795B0064F694 /* LQYRecommendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BAA92461BDB795B0064F694 /* LQYRecommendCell.xib */; settings = {ASSET_TAGS = (); }; };
+		8BAA924B1BDB80E90064F694 /* LQYRecommend.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BAA924A1BDB80E90064F694 /* LQYRecommend.m */; settings = {ASSET_TAGS = (); }; };
 		8BCF46271BD67EF2008F4662 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BCF46261BD67EF2008F4662 /* Assets.xcassets */; };
 		8BCF46351BD67EF2008F4662 /* baisibudejieTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCF46341BD67EF2008F4662 /* baisibudejieTests.m */; };
 		8BCF46401BD67EF2008F4662 /* baisibudejieUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCF463F1BD67EF2008F4662 /* baisibudejieUITests.m */; };
 		8BEE20801BD7E7DE00B49C3B /* LQYFriendTrendsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BEE207F1BD7E7DE00B49C3B /* LQYFriendTrendsViewController.storyboard */; settings = {ASSET_TAGS = (); }; };
 		8BFB724E1BDB0F0C0013D7A6 /* LQYLoginRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFB724D1BDB0F0C0013D7A6 /* LQYLoginRegisterViewController.m */; settings = {ASSET_TAGS = (); }; };
 		8BFB72511BDB13C60013D7A6 /* LQYQuickLoginButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFB72501BDB13C60013D7A6 /* LQYQuickLoginButton.m */; settings = {ASSET_TAGS = (); }; };
+		D19E704C2A0F4CB6238397AC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D8280AFA4A3D7C8E807DE397 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,10 +53,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F814D0D4A2EA3525A6C7F1D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		8B06A2631BD78C8A000C0347 /* LQYTest1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQYTest1ViewController.h; sourceTree = "<group>"; };
 		8B06A2641BD78C8A000C0347 /* LQYTest1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQYTest1ViewController.m; sourceTree = "<group>"; };
 		8B12D6CA1BD7823F009FC706 /* LQYNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQYNavigationController.h; sourceTree = "<group>"; };
 		8B12D6CB1BD7823F009FC706 /* LQYNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQYNavigationController.m; sourceTree = "<group>"; };
+		8B1F47521BDC6C5700D12672 /* LQYConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQYConst.h; sourceTree = "<group>"; };
+		8B1F47531BDC6C5700D12672 /* LQYConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQYConst.m; sourceTree = "<group>"; };
 		8B6455511BD73EBA009CB9D3 /* LQYEssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQYEssenceViewController.h; sourceTree = "<group>"; };
 		8B6455521BD73EBA009CB9D3 /* LQYEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQYEssenceViewController.m; sourceTree = "<group>"; };
 		8B6455571BD73EBA009CB9D3 /* LQYFriendTrendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQYFriendTrendsViewController.h; sourceTree = "<group>"; };
@@ -75,6 +84,13 @@
 		8B966AE81BDB7320001294EB /* LQYLoginRegisterTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQYLoginRegisterTextField.m; sourceTree = "<group>"; };
 		8B96930E1BDB5F5C00E03479 /* UIView+LQYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LQYExtension.h"; sourceTree = "<group>"; };
 		8B96930F1BDB5F5C00E03479 /* UIView+LQYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LQYExtension.m"; sourceTree = "<group>"; };
+		8BAA923E1BDB78A10064F694 /* LQYRecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQYRecommendViewController.h; sourceTree = "<group>"; };
+		8BAA923F1BDB78A10064F694 /* LQYRecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQYRecommendViewController.m; sourceTree = "<group>"; };
+		8BAA92441BDB795B0064F694 /* LQYRecommendCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQYRecommendCell.h; sourceTree = "<group>"; };
+		8BAA92451BDB795B0064F694 /* LQYRecommendCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQYRecommendCell.m; sourceTree = "<group>"; };
+		8BAA92461BDB795B0064F694 /* LQYRecommendCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LQYRecommendCell.xib; sourceTree = "<group>"; };
+		8BAA92491BDB80E90064F694 /* LQYRecommend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQYRecommend.h; sourceTree = "<group>"; };
+		8BAA924A1BDB80E90064F694 /* LQYRecommend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQYRecommend.m; sourceTree = "<group>"; };
 		8BCF46171BD67EF2008F4662 /* baisibudejie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = baisibudejie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BCF46261BD67EF2008F4662 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8BCF462B1BD67EF2008F4662 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -89,6 +105,8 @@
 		8BFB724D1BDB0F0C0013D7A6 /* LQYLoginRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQYLoginRegisterViewController.m; sourceTree = "<group>"; };
 		8BFB724F1BDB13C60013D7A6 /* LQYQuickLoginButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQYQuickLoginButton.h; sourceTree = "<group>"; };
 		8BFB72501BDB13C60013D7A6 /* LQYQuickLoginButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQYQuickLoginButton.m; sourceTree = "<group>"; };
+		972158F2CAD1A79D996EF79D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		D8280AFA4A3D7C8E807DE397 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D19E704C2A0F4CB6238397AC /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +135,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		48658A5A759726BA680075A8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0F814D0D4A2EA3525A6C7F1D /* Pods.debug.xcconfig */,
+				972158F2CAD1A79D996EF79D /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8B64554E1BD73EBA009CB9D3 /* classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +171,8 @@
 			children = (
 				8B6455511BD73EBA009CB9D3 /* LQYEssenceViewController.h */,
 				8B6455521BD73EBA009CB9D3 /* LQYEssenceViewController.m */,
+				8BAA923E1BDB78A10064F694 /* LQYRecommendViewController.h */,
+				8BAA923F1BDB78A10064F694 /* LQYRecommendViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -150,6 +180,8 @@
 		8B6455531BD73EBA009CB9D3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8BAA92491BDB80E90064F694 /* LQYRecommend.h */,
+				8BAA924A1BDB80E90064F694 /* LQYRecommend.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -157,6 +189,9 @@
 		8B6455541BD73EBA009CB9D3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8BAA92441BDB795B0064F694 /* LQYRecommendCell.h */,
+				8BAA92451BDB795B0064F694 /* LQYRecommendCell.m */,
+				8BAA92461BDB795B0064F694 /* LQYRecommendCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -282,6 +317,8 @@
 				8B6455691BD73EBA009CB9D3 /* AppDelegate.m */,
 				8B64556E1BD73EBA009CB9D3 /* main.m */,
 				8B6455701BD73EBA009CB9D3 /* PrefixHeader.pch */,
+				8B1F47521BDC6C5700D12672 /* LQYConst.h */,
+				8B1F47531BDC6C5700D12672 /* LQYConst.m */,
 			);
 			path = "Other-其他";
 			sourceTree = "<group>";
@@ -331,6 +368,8 @@
 				8BCF46331BD67EF2008F4662 /* baisibudejieTests */,
 				8BCF463E1BD67EF2008F4662 /* baisibudejieUITests */,
 				8BCF46181BD67EF2008F4662 /* Products */,
+				48658A5A759726BA680075A8 /* Pods */,
+				A7C65A2623DA6FA13C1733D9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -380,6 +419,14 @@
 			path = baisibudejieUITests;
 			sourceTree = "<group>";
 		};
+		A7C65A2623DA6FA13C1733D9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D8280AFA4A3D7C8E807DE397 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -387,9 +434,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8BCF46441BD67EF2008F4662 /* Build configuration list for PBXNativeTarget "baisibudejie" */;
 			buildPhases = (
+				A7F3220067FA22A149475FFF /* Check Pods Manifest.lock */,
 				8BCF46131BD67EF2008F4662 /* Sources */,
 				8BCF46141BD67EF2008F4662 /* Frameworks */,
 				8BCF46151BD67EF2008F4662 /* Resources */,
+				DF50783F4D1C1A10D7E09732 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -486,6 +535,7 @@
 			files = (
 				8BEE20801BD7E7DE00B49C3B /* LQYFriendTrendsViewController.storyboard in Resources */,
 				8BCF46271BD67EF2008F4662 /* Assets.xcassets in Resources */,
+				8BAA92481BDB795B0064F694 /* LQYRecommendCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,6 +555,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A7F3220067FA22A149475FFF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DF50783F4D1C1A10D7E09732 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8BCF46131BD67EF2008F4662 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -513,8 +596,11 @@
 				8B64557B1BD73EBA009CB9D3 /* LQYTabBar.m in Sources */,
 				8B6A083F1BD770A900BA98D1 /* UIBarButtonItem+LQYExtension.m in Sources */,
 				8B9693101BDB5F5C00E03479 /* UIView+LQYExtension.m in Sources */,
+				8BAA92471BDB795B0064F694 /* LQYRecommendCell.m in Sources */,
 				8B966AE91BDB7320001294EB /* LQYLoginRegisterTextField.m in Sources */,
+				8BAA924B1BDB80E90064F694 /* LQYRecommend.m in Sources */,
 				8B6455791BD73EBA009CB9D3 /* LQYTabBarController.m in Sources */,
+				8BAA92401BDB78A10064F694 /* LQYRecommendViewController.m in Sources */,
 				8B6455771BD73EBA009CB9D3 /* LQYNewViewController.m in Sources */,
 				8B6455761BD73EBA009CB9D3 /* LQYMeViewController.m in Sources */,
 				8B6A08421BD7790D00BA98D1 /* LQYSettingController.m in Sources */,
@@ -525,6 +611,7 @@
 				8B64557A1BD73EBA009CB9D3 /* main.m in Sources */,
 				8B12D6CC1BD7823F009FC706 /* LQYNavigationController.m in Sources */,
 				8BFB72511BDB13C60013D7A6 /* LQYQuickLoginButton.m in Sources */,
+				8B1F47541BDC6C5700D12672 /* LQYConst.m in Sources */,
 				8B6455781BD73EBA009CB9D3 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -643,6 +730,7 @@
 		};
 		8BCF46451BD67EF2008F4662 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F814D0D4A2EA3525A6C7F1D /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
@@ -656,6 +744,7 @@
 		};
 		8BCF46461BD67EF2008F4662 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 972158F2CAD1A79D996EF79D /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
