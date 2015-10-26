@@ -17,7 +17,7 @@
 #import "LQYConst.h"
 
 #ifdef DEBUG // 调试阶段
-#define LQYNSLog(...) NSLog(_VA_ARGS)
+#define LQYLog(...) NSLog(__VA_ARGS__)
 #else // 打包发布阶段
 #define LQYNSLog(...)
 #endif

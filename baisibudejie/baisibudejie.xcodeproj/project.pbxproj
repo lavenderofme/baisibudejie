@@ -19,6 +19,7 @@
 		8B64557B1BD73EBA009CB9D3 /* LQYTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6455731BD73EBA009CB9D3 /* LQYTabBar.m */; settings = {ASSET_TAGS = (); }; };
 		8B6A083F1BD770A900BA98D1 /* UIBarButtonItem+LQYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6A083E1BD770A900BA98D1 /* UIBarButtonItem+LQYExtension.m */; settings = {ASSET_TAGS = (); }; };
 		8B6A08421BD7790D00BA98D1 /* LQYSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6A08411BD7790D00BA98D1 /* LQYSettingController.m */; settings = {ASSET_TAGS = (); }; };
+		8B74AB261BDE637700F9F6E7 /* NSString+LQYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B74AB251BDE637700F9F6E7 /* NSString+LQYExtension.m */; settings = {ASSET_TAGS = (); }; };
 		8B81ABA11BDC97F800FCAB70 /* UIImage+LQYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B81ABA01BDC97F800FCAB70 /* UIImage+LQYExtension.m */; settings = {ASSET_TAGS = (); }; };
 		8B81ABA41BDC9B0500FCAB70 /* UIImageView+LQYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B81ABA31BDC9B0500FCAB70 /* UIImageView+LQYExtension.m */; settings = {ASSET_TAGS = (); }; };
 		8B81ABA71BDCE7EE00FCAB70 /* LQYHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B81ABA61BDCE7EE00FCAB70 /* LQYHTTPSessionManager.m */; settings = {ASSET_TAGS = (); }; };
@@ -86,6 +87,8 @@
 		8B6A083E1BD770A900BA98D1 /* UIBarButtonItem+LQYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+LQYExtension.m"; sourceTree = "<group>"; };
 		8B6A08401BD7790D00BA98D1 /* LQYSettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQYSettingController.h; sourceTree = "<group>"; };
 		8B6A08411BD7790D00BA98D1 /* LQYSettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQYSettingController.m; sourceTree = "<group>"; };
+		8B74AB241BDE637700F9F6E7 /* NSString+LQYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+LQYExtension.h"; sourceTree = "<group>"; };
+		8B74AB251BDE637700F9F6E7 /* NSString+LQYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+LQYExtension.m"; sourceTree = "<group>"; };
 		8B81AB9F1BDC97F800FCAB70 /* UIImage+LQYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+LQYExtension.h"; sourceTree = "<group>"; };
 		8B81ABA01BDC97F800FCAB70 /* UIImage+LQYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+LQYExtension.m"; sourceTree = "<group>"; };
 		8B81ABA21BDC9B0500FCAB70 /* UIImageView+LQYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+LQYExtension.h"; sourceTree = "<group>"; };
@@ -368,6 +371,8 @@
 				8B81ABA01BDC97F800FCAB70 /* UIImage+LQYExtension.m */,
 				8B81ABA21BDC9B0500FCAB70 /* UIImageView+LQYExtension.h */,
 				8B81ABA31BDC9B0500FCAB70 /* UIImageView+LQYExtension.m */,
+				8B74AB241BDE637700F9F6E7 /* NSString+LQYExtension.h */,
+				8B74AB251BDE637700F9F6E7 /* NSString+LQYExtension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -636,6 +641,7 @@
 				8B6A083F1BD770A900BA98D1 /* UIBarButtonItem+LQYExtension.m in Sources */,
 				8B9693101BDB5F5C00E03479 /* UIView+LQYExtension.m in Sources */,
 				8B81ABA41BDC9B0500FCAB70 /* UIImageView+LQYExtension.m in Sources */,
+				8B74AB261BDE637700F9F6E7 /* NSString+LQYExtension.m in Sources */,
 				8BAA92471BDB795B0064F694 /* LQYRecommendCell.m in Sources */,
 				8BEE63181BDD216600056718 /* LQYSquareButton.m in Sources */,
 				8B966AE91BDB7320001294EB /* LQYLoginRegisterTextField.m in Sources */,

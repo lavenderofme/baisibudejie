@@ -43,7 +43,6 @@ static NSString * const LQYMeCellId = @"me";
     
     self.tableView.sectionHeaderHeight = 0;
     self.tableView.sectionFooterHeight = LQYMargin;
-    
     self.tableView.contentInset =  UIEdgeInsetsMake(LQYMargin - LQYGorupFirstCellY, 0, 0, 0);
     
     // 注册 cell
@@ -104,7 +103,7 @@ static NSString * const LQYMeCellId = @"me";
 
 - (void)mineSettingClick
 {
-    LQYSettingController *setting = [[LQYSettingController alloc]init];
+    LQYSettingController *setting = [[LQYSettingController alloc]initWithStyle:UITableViewStyleGrouped];
     [self.navigationController pushViewController:setting animated:YES];
 }
 

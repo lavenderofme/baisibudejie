@@ -81,12 +81,24 @@
         button.square = squares[i];
         
     }
+//    
+//    // 总行数 == (总个数 + 每行的最大个数 - 1) / 每行的最大个数
+//    NSInteger rowsCount = (count + columnsCount - 1) / columnsCount;
+//    // 设置footer的高度 == 总行数 * 一个按钮的高度
+//    self.height = rowsCount * buttonH;
     
-    // 总行数 == (总个数 + 每行的最大个数 - 1) / 每行的最大个数
-    NSInteger rowsCount = (count + columnsCount - 1) / columnsCount;
-    // 设置footer的高度 == 总行数 * 一个按钮的高度
-    self.height = rowsCount * buttonH;
+    // 设置footer的高度 == 最后一个按钮的bottom
+    self.height = self.subviews.lastObject.bottom;
+    
+    // 设置footer
+    UITableView *tableVeiw = (UITableView *)self.superview;
+    tableVeiw.tableFooterView = self;
+
+    
+    
 }
+
+#pragma mark - 监听按钮的点击
 - (void)buttonClick:(LQYSquareButton *)button
 {
     NSString *url = button.square.url;

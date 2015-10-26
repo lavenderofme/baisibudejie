@@ -45,6 +45,6 @@
     _square = square;
     
     [self setTitle:square.name forState:UIControlStateNormal];
-    [self sd_setImageWithURL:[NSURL URLWithString:square.icon] forState:UIControlStateNormal];
+    [self sd_setImageWithURL:[NSURL URLWithString:square.icon] forState:UIControlStateNormal placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]];
 }
 @end
