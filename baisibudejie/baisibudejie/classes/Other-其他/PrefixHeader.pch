@@ -14,6 +14,7 @@
 #import "UIView+LQYExtension.h"
 #import "UIImage+LQYExtension.h"
 #import "UIImageView+LQYExtension.h"
+#import "NSString+LQYExtension.h"
 #import "LQYConst.h"
 
 #ifdef DEBUG // 调试阶段

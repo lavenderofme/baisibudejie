@@ -20,6 +20,8 @@
 		8B6A083F1BD770A900BA98D1 /* UIBarButtonItem+LQYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6A083E1BD770A900BA98D1 /* UIBarButtonItem+LQYExtension.m */; settings = {ASSET_TAGS = (); }; };
 		8B6A08421BD7790D00BA98D1 /* LQYSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6A08411BD7790D00BA98D1 /* LQYSettingController.m */; settings = {ASSET_TAGS = (); }; };
 		8B74AB261BDE637700F9F6E7 /* NSString+LQYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B74AB251BDE637700F9F6E7 /* NSString+LQYExtension.m */; settings = {ASSET_TAGS = (); }; };
+		8B74AB291BDE6F9500F9F6E7 /* LQYClearCachesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B74AB281BDE6F9500F9F6E7 /* LQYClearCachesCell.m */; settings = {ASSET_TAGS = (); }; };
+		8B74AB2C1BDE7B9C00F9F6E7 /* LQYSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B74AB2B1BDE7B9C00F9F6E7 /* LQYSettingCell.m */; settings = {ASSET_TAGS = (); }; };
 		8B81ABA11BDC97F800FCAB70 /* UIImage+LQYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B81ABA01BDC97F800FCAB70 /* UIImage+LQYExtension.m */; settings = {ASSET_TAGS = (); }; };
 		8B81ABA41BDC9B0500FCAB70 /* UIImageView+LQYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B81ABA31BDC9B0500FCAB70 /* UIImageView+LQYExtension.m */; settings = {ASSET_TAGS = (); }; };
 		8B81ABA71BDCE7EE00FCAB70 /* LQYHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B81ABA61BDCE7EE00FCAB70 /* LQYHTTPSessionManager.m */; settings = {ASSET_TAGS = (); }; };
@@ -89,6 +91,10 @@
 		8B6A08411BD7790D00BA98D1 /* LQYSettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQYSettingController.m; sourceTree = "<group>"; };
 		8B74AB241BDE637700F9F6E7 /* NSString+LQYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+LQYExtension.h"; sourceTree = "<group>"; };
 		8B74AB251BDE637700F9F6E7 /* NSString+LQYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+LQYExtension.m"; sourceTree = "<group>"; };
+		8B74AB271BDE6F9500F9F6E7 /* LQYClearCachesCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQYClearCachesCell.h; sourceTree = "<group>"; };
+		8B74AB281BDE6F9500F9F6E7 /* LQYClearCachesCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQYClearCachesCell.m; sourceTree = "<group>"; };
+		8B74AB2A1BDE7B9C00F9F6E7 /* LQYSettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQYSettingCell.h; sourceTree = "<group>"; };
+		8B74AB2B1BDE7B9C00F9F6E7 /* LQYSettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQYSettingCell.m; sourceTree = "<group>"; };
 		8B81AB9F1BDC97F800FCAB70 /* UIImage+LQYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+LQYExtension.h"; sourceTree = "<group>"; };
 		8B81ABA01BDC97F800FCAB70 /* UIImage+LQYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+LQYExtension.m"; sourceTree = "<group>"; };
 		8B81ABA21BDC9B0500FCAB70 /* UIImageView+LQYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+LQYExtension.h"; sourceTree = "<group>"; };
@@ -304,6 +310,10 @@
 				8BEE63111BDD049100056718 /* LQYMeFooter.m */,
 				8BEE63161BDD216600056718 /* LQYSquareButton.h */,
 				8BEE63171BDD216600056718 /* LQYSquareButton.m */,
+				8B74AB271BDE6F9500F9F6E7 /* LQYClearCachesCell.h */,
+				8B74AB281BDE6F9500F9F6E7 /* LQYClearCachesCell.m */,
+				8B74AB2A1BDE7B9C00F9F6E7 /* LQYSettingCell.h */,
+				8B74AB2B1BDE7B9C00F9F6E7 /* LQYSettingCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -664,7 +674,9 @@
 				8BFB72511BDB13C60013D7A6 /* LQYQuickLoginButton.m in Sources */,
 				8B1F47541BDC6C5700D12672 /* LQYConst.m in Sources */,
 				8BBF190D1BDD296B00B2FC61 /* LQYWebViewController.m in Sources */,
+				8B74AB291BDE6F9500F9F6E7 /* LQYClearCachesCell.m in Sources */,
 				8B6455781BD73EBA009CB9D3 /* AppDelegate.m in Sources */,
+				8B74AB2C1BDE7B9C00F9F6E7 /* LQYSettingCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
