@@ -36,6 +36,6 @@
 
 - (IBAction)backToFriendTrendsViewController:(UIStoryboardSegue *)segue
 {
-    NSLog(@"______");
+    NSLogFun
 }
 @end

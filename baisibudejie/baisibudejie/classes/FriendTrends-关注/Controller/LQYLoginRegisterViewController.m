@@ -32,4 +32,13 @@
     [self.view endEditing:YES];
 }
 
+/**
+ *  设置状态栏样式
+ *
+ *  @return iOS7开始状态栏的样式 有控制器决定
+ */
+- (UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleLightContent;
+}
 @end

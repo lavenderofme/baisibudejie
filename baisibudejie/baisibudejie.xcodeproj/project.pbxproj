@@ -32,6 +32,7 @@
 		8BAA92471BDB795B0064F694 /* LQYRecommendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BAA92451BDB795B0064F694 /* LQYRecommendCell.m */; settings = {ASSET_TAGS = (); }; };
 		8BAA92481BDB795B0064F694 /* LQYRecommendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BAA92461BDB795B0064F694 /* LQYRecommendCell.xib */; settings = {ASSET_TAGS = (); }; };
 		8BAA924B1BDB80E90064F694 /* LQYRecommend.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BAA924A1BDB80E90064F694 /* LQYRecommend.m */; settings = {ASSET_TAGS = (); }; };
+		8BBA5CDF1BDE8B8200C11ED1 /* LQYTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BBA5CDE1BDE8B8200C11ED1 /* LQYTitleButton.m */; settings = {ASSET_TAGS = (); }; };
 		8BBF190D1BDD296B00B2FC61 /* LQYWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BBF190B1BDD296B00B2FC61 /* LQYWebViewController.m */; settings = {ASSET_TAGS = (); }; };
 		8BBF190E1BDD296B00B2FC61 /* LQYWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BBF190C1BDD296B00B2FC61 /* LQYWebViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		8BCF46271BD67EF2008F4662 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BCF46261BD67EF2008F4662 /* Assets.xcassets */; };
@@ -114,6 +115,8 @@
 		8BAA92461BDB795B0064F694 /* LQYRecommendCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LQYRecommendCell.xib; sourceTree = "<group>"; };
 		8BAA92491BDB80E90064F694 /* LQYRecommend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQYRecommend.h; sourceTree = "<group>"; };
 		8BAA924A1BDB80E90064F694 /* LQYRecommend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQYRecommend.m; sourceTree = "<group>"; };
+		8BBA5CDD1BDE8B8200C11ED1 /* LQYTitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQYTitleButton.h; sourceTree = "<group>"; };
+		8BBA5CDE1BDE8B8200C11ED1 /* LQYTitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQYTitleButton.m; sourceTree = "<group>"; };
 		8BBF190A1BDD296B00B2FC61 /* LQYWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQYWebViewController.h; sourceTree = "<group>"; };
 		8BBF190B1BDD296B00B2FC61 /* LQYWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQYWebViewController.m; sourceTree = "<group>"; };
 		8BBF190C1BDD296B00B2FC61 /* LQYWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LQYWebViewController.xib; sourceTree = "<group>"; };
@@ -224,6 +227,8 @@
 				8BAA92441BDB795B0064F694 /* LQYRecommendCell.h */,
 				8BAA92451BDB795B0064F694 /* LQYRecommendCell.m */,
 				8BAA92461BDB795B0064F694 /* LQYRecommendCell.xib */,
+				8BBA5CDD1BDE8B8200C11ED1 /* LQYTitleButton.h */,
+				8BBA5CDE1BDE8B8200C11ED1 /* LQYTitleButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -659,6 +664,7 @@
 				8BEE63121BDD049100056718 /* LQYMeFooter.m in Sources */,
 				8B6455791BD73EBA009CB9D3 /* LQYTabBarController.m in Sources */,
 				8B81ABAA1BDCEC1A00FCAB70 /* LQYMeCell.m in Sources */,
+				8BBA5CDF1BDE8B8200C11ED1 /* LQYTitleButton.m in Sources */,
 				8BAA92401BDB78A10064F694 /* LQYRecommendViewController.m in Sources */,
 				8B6455771BD73EBA009CB9D3 /* LQYNewViewController.m in Sources */,
 				8B6455761BD73EBA009CB9D3 /* LQYMeViewController.m in Sources */,
