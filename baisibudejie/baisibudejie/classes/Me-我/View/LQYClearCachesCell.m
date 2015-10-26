@@ -17,6 +17,9 @@
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         // 初始化文字
         self.textLabel.text = @"清理缓存";
+        
+        // 在计算缓存的时候不可点击,不可与用户交互
+        self.userInteractionEnabled = NO;
        
         // 左边显示圈圈
         UIActivityIndicatorView *loadingView = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
@@ -25,6 +28,8 @@
         
         // 在子线程中计算缓存大小
         [[[NSOperationQueue alloc]init] addOperationWithBlock:^{
+            // 睡 5 秒
+            [NSThread sleepForTimeInterval:5.0];
             // 单位
             double unit = 1000;
             // 文件的缓存大小
@@ -49,6 +54,9 @@
                 // 去掉圈圈
                 self.accessoryView = nil;
                 self.accessoryType = UITableViewCellAccessoryDisclosureIndicator; // 尖尖样式
+                
+                // 恢复点击
+                self.userInteractionEnabled = YES;
             }];
         }];
         
@@ -84,11 +92,19 @@
         }];
     }];
 }
-
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
+/**
+ * 1.当控件显示到屏幕上时会调用一次layoutSubviews
+ * 2.当控件的尺寸发生改变的时候会调用一次layoutSubviews
+ */
+- (void)layoutSubviews
+{
+    [super layoutSubviews];
+    
+    // 当cell离开屏幕时, UIActivityIndicatorView的动画就会被自动停止
+    
+    // 当cell重新显示到屏幕上时, 应该重新开始UIActivityIndicatorView的动画
+    UIActivityIndicatorView *loadingView = (UIActivityIndicatorView *)self.accessoryView;
+    [loadingView startAnimating];
 }
 
 @end
