@@ -38,6 +38,11 @@
 		8BCF46271BD67EF2008F4662 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BCF46261BD67EF2008F4662 /* Assets.xcassets */; };
 		8BCF46351BD67EF2008F4662 /* baisibudejieTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCF46341BD67EF2008F4662 /* baisibudejieTests.m */; };
 		8BCF46401BD67EF2008F4662 /* baisibudejieUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCF463F1BD67EF2008F4662 /* baisibudejieUITests.m */; };
+		8BD7F9D21BE069210002CF5E /* LQYAllViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD7F9D11BE069210002CF5E /* LQYAllViewController.m */; settings = {ASSET_TAGS = (); }; };
+		8BD7F9D51BE0692D0002CF5E /* LQYVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD7F9D41BE0692D0002CF5E /* LQYVideoViewController.m */; settings = {ASSET_TAGS = (); }; };
+		8BD7F9D81BE069390002CF5E /* LQYVoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD7F9D71BE069390002CF5E /* LQYVoiceViewController.m */; settings = {ASSET_TAGS = (); }; };
+		8BD7F9DB1BE0694A0002CF5E /* LQYPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD7F9DA1BE0694A0002CF5E /* LQYPictureViewController.m */; settings = {ASSET_TAGS = (); }; };
+		8BD7F9DE1BE069550002CF5E /* LQYWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD7F9DD1BE069550002CF5E /* LQYWordViewController.m */; settings = {ASSET_TAGS = (); }; };
 		8BEE20801BD7E7DE00B49C3B /* LQYFriendTrendsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BEE207F1BD7E7DE00B49C3B /* LQYFriendTrendsViewController.storyboard */; settings = {ASSET_TAGS = (); }; };
 		8BEE63121BDD049100056718 /* LQYMeFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BEE63111BDD049100056718 /* LQYMeFooter.m */; settings = {ASSET_TAGS = (); }; };
 		8BEE63151BDD067400056718 /* LQYSquare.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BEE63141BDD067400056718 /* LQYSquare.m */; settings = {ASSET_TAGS = (); }; };
@@ -129,6 +134,16 @@
 		8BCF463B1BD67EF2008F4662 /* baisibudejieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = baisibudejieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BCF463F1BD67EF2008F4662 /* baisibudejieUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = baisibudejieUITests.m; sourceTree = "<group>"; };
 		8BCF46411BD67EF2008F4662 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BD7F9D01BE069210002CF5E /* LQYAllViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQYAllViewController.h; sourceTree = "<group>"; };
+		8BD7F9D11BE069210002CF5E /* LQYAllViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQYAllViewController.m; sourceTree = "<group>"; };
+		8BD7F9D31BE0692D0002CF5E /* LQYVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQYVideoViewController.h; sourceTree = "<group>"; };
+		8BD7F9D41BE0692D0002CF5E /* LQYVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQYVideoViewController.m; sourceTree = "<group>"; };
+		8BD7F9D61BE069390002CF5E /* LQYVoiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQYVoiceViewController.h; sourceTree = "<group>"; };
+		8BD7F9D71BE069390002CF5E /* LQYVoiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQYVoiceViewController.m; sourceTree = "<group>"; };
+		8BD7F9D91BE0694A0002CF5E /* LQYPictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQYPictureViewController.h; sourceTree = "<group>"; };
+		8BD7F9DA1BE0694A0002CF5E /* LQYPictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQYPictureViewController.m; sourceTree = "<group>"; };
+		8BD7F9DC1BE069550002CF5E /* LQYWordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQYWordViewController.h; sourceTree = "<group>"; };
+		8BD7F9DD1BE069550002CF5E /* LQYWordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQYWordViewController.m; sourceTree = "<group>"; };
 		8BEE207F1BD7E7DE00B49C3B /* LQYFriendTrendsViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LQYFriendTrendsViewController.storyboard; sourceTree = "<group>"; };
 		8BEE63101BDD049100056718 /* LQYMeFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQYMeFooter.h; sourceTree = "<group>"; };
 		8BEE63111BDD049100056718 /* LQYMeFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQYMeFooter.m; sourceTree = "<group>"; };
@@ -204,6 +219,7 @@
 		8B6455501BD73EBA009CB9D3 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				8BD7F9B11BE0656A0002CF5E /* Topic */,
 				8B6455511BD73EBA009CB9D3 /* LQYEssenceViewController.h */,
 				8B6455521BD73EBA009CB9D3 /* LQYEssenceViewController.m */,
 				8BAA923E1BDB78A10064F694 /* LQYRecommendViewController.h */,
@@ -477,6 +493,23 @@
 			path = baisibudejieUITests;
 			sourceTree = "<group>";
 		};
+		8BD7F9B11BE0656A0002CF5E /* Topic */ = {
+			isa = PBXGroup;
+			children = (
+				8BD7F9D01BE069210002CF5E /* LQYAllViewController.h */,
+				8BD7F9D11BE069210002CF5E /* LQYAllViewController.m */,
+				8BD7F9D31BE0692D0002CF5E /* LQYVideoViewController.h */,
+				8BD7F9D41BE0692D0002CF5E /* LQYVideoViewController.m */,
+				8BD7F9D61BE069390002CF5E /* LQYVoiceViewController.h */,
+				8BD7F9D71BE069390002CF5E /* LQYVoiceViewController.m */,
+				8BD7F9D91BE0694A0002CF5E /* LQYPictureViewController.h */,
+				8BD7F9DA1BE0694A0002CF5E /* LQYPictureViewController.m */,
+				8BD7F9DC1BE069550002CF5E /* LQYWordViewController.h */,
+				8BD7F9DD1BE069550002CF5E /* LQYWordViewController.m */,
+			);
+			name = Topic;
+			sourceTree = "<group>";
+		};
 		A7C65A2623DA6FA13C1733D9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -662,6 +695,7 @@
 				8B966AE91BDB7320001294EB /* LQYLoginRegisterTextField.m in Sources */,
 				8BAA924B1BDB80E90064F694 /* LQYRecommend.m in Sources */,
 				8BEE63121BDD049100056718 /* LQYMeFooter.m in Sources */,
+				8BD7F9D81BE069390002CF5E /* LQYVoiceViewController.m in Sources */,
 				8B6455791BD73EBA009CB9D3 /* LQYTabBarController.m in Sources */,
 				8B81ABAA1BDCEC1A00FCAB70 /* LQYMeCell.m in Sources */,
 				8BBA5CDF1BDE8B8200C11ED1 /* LQYTitleButton.m in Sources */,
@@ -677,12 +711,16 @@
 				8BEE63151BDD067400056718 /* LQYSquare.m in Sources */,
 				8B12D6CC1BD7823F009FC706 /* LQYNavigationController.m in Sources */,
 				8B81ABA71BDCE7EE00FCAB70 /* LQYHTTPSessionManager.m in Sources */,
+				8BD7F9D51BE0692D0002CF5E /* LQYVideoViewController.m in Sources */,
 				8BFB72511BDB13C60013D7A6 /* LQYQuickLoginButton.m in Sources */,
 				8B1F47541BDC6C5700D12672 /* LQYConst.m in Sources */,
+				8BD7F9DB1BE0694A0002CF5E /* LQYPictureViewController.m in Sources */,
 				8BBF190D1BDD296B00B2FC61 /* LQYWebViewController.m in Sources */,
+				8BD7F9DE1BE069550002CF5E /* LQYWordViewController.m in Sources */,
 				8B74AB291BDE6F9500F9F6E7 /* LQYClearCachesCell.m in Sources */,
 				8B6455781BD73EBA009CB9D3 /* AppDelegate.m in Sources */,
 				8B74AB2C1BDE7B9C00F9F6E7 /* LQYSettingCell.m in Sources */,
+				8BD7F9D21BE069210002CF5E /* LQYAllViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
