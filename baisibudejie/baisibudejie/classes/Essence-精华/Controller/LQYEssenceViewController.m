@@ -15,7 +15,7 @@
 #import "LQYPictureViewController.h"
 #import "LQYWordViewController.h"
 
-@interface LQYEssenceViewController ()
+@interface LQYEssenceViewController ()<UIScrollViewDelegate>
 
 @property (nonatomic, weak) LQYTitleButton *selectedButton; /**< 记录选中的按钮 */
 
@@ -23,9 +23,21 @@
 
 @property (nonatomic, weak) UIScrollView *scrollView; /**< 添加到控制器上的 veiw, 用来存放所有的 topic 控制器 */
 
+@property (nonatomic, strong) NSMutableArray *titleButtons; /**< 存放所以的标题按钮 */
+
 @end
 
 @implementation LQYEssenceViewController
+#pragma mark - 懒加载
+/** titleButtons属性的懒加载 */
+- (NSMutableArray *)titleButtons
+{
+    if (!_titleButtons) {
+        _titleButtons = [NSMutableArray array];
+    }
+    return _titleButtons;
+}
+
 
 #pragma mark - 初始化设置
 - (void)viewDidLoad {
@@ -46,6 +58,8 @@
     // 添加顶部标题
     [self setUPTitleView];
     
+    // 添加自控制器
+    [self addChildView];
     
 }
 
@@ -105,6 +119,9 @@
         // 监听按钮的点击
         [titleButton addTarget:self action:@selector(titleButtonClick:) forControlEvents:UIControlEventTouchUpInside];
         
+        // 添加按钮到按钮数组中
+        [self.titleButtons addObject:titleButton];
+        
         // 给按钮添加 tag 记录按钮
         titleButton.tag = i;
         
@@ -159,24 +176,13 @@
     scrollView.backgroundColor = LQYCommonBgColor;
     [self.view addSubview:scrollView];
     
+    scrollView.delegate = self;
+    
     // 禁止掉[自动设置scrollView的内边距]
     self.automaticallyAdjustsScrollViewInsets = NO;
     
     // 设置 scrollView 的大小
     scrollView.contentSize = CGSizeMake(self.childViewControllers.count * scrollView.width, 0);
-    // 添加控制器的 View
-    for (int i = 0; i < self.childViewControllers.count; i++) {
-        // 取出当前控制器的子控制器
-        UITableViewController *vc = self.childViewControllers[i];
-            
-        vc.tableView.x = i * scrollView.width;
-        vc.tableView.y = 0;
-        vc.tableView.width = scrollView.width;
-        vc.tableView.height = scrollView.height;
-        
-        [scrollView addSubview:vc.tableView];
-    }
-    
     self.scrollView = scrollView;
     
 }
@@ -223,5 +229,54 @@
     CGPoint offset = self.scrollView.contentOffset;
     offset.x = titleButton.tag * self.scrollView.width;
     [self.scrollView setContentOffset:offset animated:YES];
+}
+
+#pragma mark - scrollView 的代理方法
+/**
+ * 如果通过setContentOffset:animated:让scrollView[进行了滚动动画], 那么最后会在停止滚动时调用这个方法
+ */
+- (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView
+{
+    // 添加自控制器
+    [self addChildView];
+}
+
+/**
+ *  scrollView停止滚动的时候会调用1次(人为拖拽导致的停止滚动才会触发这个方法)
+ */
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+{
+    // 根据偏移量计算索引
+    NSInteger index  = scrollView.contentOffset.x / scrollView.width;
+    // 取出对应的按钮
+    LQYTitleButton *titleButton  = self.titleButtons[index];
+    // 调用 点击按钮
+    [self titleButtonClick:titleButton];
+    
+    // 添加自控制器
+    [self addChildView];
+
+}
+
+#pragma mark - 其他方法
+/**
+ *  根据 scrollView 的偏移量添加自控制器
+ */
+- (void)addChildView
+{
+    UIScrollView *scrollView = self.scrollView;
+    
+    // 根据偏移量计算索引
+    NSInteger index  = scrollView.contentOffset.x / scrollView.width;
+    
+    UITableViewController *willShowVc = self.childViewControllers[index];
+    
+    // 如果控制器已经创建就 return
+    if (willShowVc.isViewLoaded) return;
+    
+    [scrollView addSubview:willShowVc.view];
+    
+    //LQYLog(@"%@",NSStringFromCGRect(scrollView.bounds));
+    willShowVc.view .frame = scrollView.bounds;
 }
 @end
