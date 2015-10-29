@@ -37,14 +37,36 @@ static NSString * const topicId = @"topicCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    //设置 tableView
+    [self setupTableView];
+    
+    // 加载数据
+    [self loadNewTopic];
+}
+
+/**
+ *  设置 tableView
+ */
+- (void)setupTableView
+{
     // 设置 tableView 的内边距 导航栏44 + 状态栏20 + 顶部标题40 = 104
     self.tableView.contentInset = UIEdgeInsetsMake(104, 0, 49, 0);
     // 设置滚动条的内边距
     self.tableView.scrollIndicatorInsets = self.tableView.contentInset;
     self.tableView.rowHeight = 200;
+    self.tableView.backgroundColor = LQYCommonBgColor;
+    
+    // 取消 cell 的分割线
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     // 注册
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([LQYTopicCell class]) bundle:nil] forCellReuseIdentifier:topicId];
-    
+}
+
+/**
+ *  加载数据
+ */
+- (void)loadNewTopic
+{
     // 请求参数
     NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
     parameters[@"a"] = @"list";
