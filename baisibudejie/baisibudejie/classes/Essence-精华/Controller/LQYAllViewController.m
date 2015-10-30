@@ -12,6 +12,7 @@
 #import "LQYTopic.h"
 #import "LQYTopic.h"
 #import "LQYTopicCell.h"
+#import "LQYDIYHeader.h"
 
 @interface LQYAllViewController ()
 
@@ -40,8 +41,6 @@ static NSString * const topicId = @"topicCell";
     //设置 tableView
     [self setupTableView];
     
-    // 加载数据
-    [self loadNewTopic];
 }
 
 /**
@@ -60,12 +59,26 @@ static NSString * const topicId = @"topicCell";
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     // 注册
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([LQYTopicCell class]) bundle:nil] forCellReuseIdentifier:topicId];
+   /*
+    // 系统做法
+    UIRefreshControl *refControl = [[UIRefreshControl alloc]init];
+    [refControl addTarget:self action:@selector(loadNewTopics) forControlEvents:UIControlEventValueChanged];
+    [self.tableView addSubview:refControl];
+    // 进入刷新状态
+    [refControl beginRefreshing];
+    */
+    
+    self.tableView.header = [LQYDIYHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewTopics)];
+    // 设置 header 的透明度
+    self.tableView.header.automaticallyChangeAlpha = YES;
+    // 进入刷新状态
+    [self.tableView.header beginRefreshing];
 }
 
 /**
  *  加载数据
  */
-- (void)loadNewTopic
+- (void)loadNewTopics
 {
     // 请求参数
     NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
@@ -73,17 +86,26 @@ static NSString * const topicId = @"topicCell";
     parameters[@"c"] = @"data";
     parameters[@"type"] = @1;
     
+    __weak typeof(self) weakSelf = self;
+    
     [self.manager GET:LQYRequestUrl parameters:parameters success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
         
         // 字典转模型
-        self.topics = [LQYTopic objectArrayWithKeyValuesArray:responseObject[@"list"]];
+        weakSelf.topics = [LQYTopic objectArrayWithKeyValuesArray:responseObject[@"list"]];
         
         // 刷新数据
-        [self.tableView reloadData];
+        [weakSelf.tableView reloadData];
+        
+        // 结束刷新
+        [weakSelf.tableView.header endRefreshing];
         
     } failure:^(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error) {
         NSLog(@"%@",error);
+        // 结束刷新
+        [weakSelf.tableView.header endRefreshing];
+
     }];
+    
 }
 
 #pragma mark - Table view data source

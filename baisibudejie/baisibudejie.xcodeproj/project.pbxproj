@@ -51,6 +51,7 @@
 		8BEE63121BDD049100056718 /* LQYMeFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BEE63111BDD049100056718 /* LQYMeFooter.m */; settings = {ASSET_TAGS = (); }; };
 		8BEE63151BDD067400056718 /* LQYSquare.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BEE63141BDD067400056718 /* LQYSquare.m */; settings = {ASSET_TAGS = (); }; };
 		8BEE63181BDD216600056718 /* LQYSquareButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BEE63171BDD216600056718 /* LQYSquareButton.m */; settings = {ASSET_TAGS = (); }; };
+		8BEF03DA1BE3A49200F50365 /* LQYDIYHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BEF03D91BE3A49200F50365 /* LQYDIYHeader.m */; settings = {ASSET_TAGS = (); }; };
 		8BFB724E1BDB0F0C0013D7A6 /* LQYLoginRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFB724D1BDB0F0C0013D7A6 /* LQYLoginRegisterViewController.m */; settings = {ASSET_TAGS = (); }; };
 		8BFB72511BDB13C60013D7A6 /* LQYQuickLoginButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFB72501BDB13C60013D7A6 /* LQYQuickLoginButton.m */; settings = {ASSET_TAGS = (); }; };
 		D19E704C2A0F4CB6238397AC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D8280AFA4A3D7C8E807DE397 /* libPods.a */; };
@@ -162,6 +163,8 @@
 		8BEE63141BDD067400056718 /* LQYSquare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQYSquare.m; sourceTree = "<group>"; };
 		8BEE63161BDD216600056718 /* LQYSquareButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQYSquareButton.h; sourceTree = "<group>"; };
 		8BEE63171BDD216600056718 /* LQYSquareButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQYSquareButton.m; sourceTree = "<group>"; };
+		8BEF03D81BE3A49200F50365 /* LQYDIYHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQYDIYHeader.h; sourceTree = "<group>"; };
+		8BEF03D91BE3A49200F50365 /* LQYDIYHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQYDIYHeader.m; sourceTree = "<group>"; };
 		8BFB724C1BDB0F0C0013D7A6 /* LQYLoginRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQYLoginRegisterViewController.h; sourceTree = "<group>"; };
 		8BFB724D1BDB0F0C0013D7A6 /* LQYLoginRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQYLoginRegisterViewController.m; sourceTree = "<group>"; };
 		8BFB724F1BDB13C60013D7A6 /* LQYQuickLoginButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQYQuickLoginButton.h; sourceTree = "<group>"; };
@@ -261,6 +264,8 @@
 				8B7D2BD41BE0AFDF009B0563 /* LQYTopicCell.h */,
 				8B7D2BD51BE0AFDF009B0563 /* LQYTopicCell.m */,
 				8B7D2BD61BE0AFDF009B0563 /* LQYTopicCell.xib */,
+				8BEF03D81BE3A49200F50365 /* LQYDIYHeader.h */,
+				8BEF03D91BE3A49200F50365 /* LQYDIYHeader.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -726,6 +731,7 @@
 				8BFB724E1BDB0F0C0013D7A6 /* LQYLoginRegisterViewController.m in Sources */,
 				8B6455751BD73EBA009CB9D3 /* LQYFriendTrendsViewController.m in Sources */,
 				8B81ABA11BDC97F800FCAB70 /* UIImage+LQYExtension.m in Sources */,
+				8BEF03DA1BE3A49200F50365 /* LQYDIYHeader.m in Sources */,
 				8B64557A1BD73EBA009CB9D3 /* main.m in Sources */,
 				8BEE63151BDD067400056718 /* LQYSquare.m in Sources */,
 				8B12D6CC1BD7823F009FC706 /* LQYNavigationController.m in Sources */,
