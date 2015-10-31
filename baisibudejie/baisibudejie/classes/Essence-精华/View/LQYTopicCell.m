@@ -37,6 +37,16 @@
     self.createdLabel.text = topic.created_at;
     self.text_label.text = topic.text;
     
+    if (topic.type == LQYTopicTypePicture) {
+        NSLog(@"图片");
+    } else if (topic.type == LQYTopicTypeWord) {
+        NSLog(@"段子");
+    }else if (topic.type == LQYTopicTypeVoice) {
+        NSLog(@"音频");
+    }else {
+        NSLog(@"视频");
+    }
+    
     [self setupButton:self.dingButton number:topic.ding title:@"顶"];
     [self setupButton:self.caiButton number:topic.cai title:@"踩"];
     [self setupButton:self.repostButton number:topic.repost title:@"分享"];

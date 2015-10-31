@@ -13,12 +13,16 @@
 #import "LQYTopic.h"
 #import "LQYTopicCell.h"
 #import "LQYDIYHeader.h"
+#import "LQYDIYFooter.h"
 
 @interface LQYAllViewController ()
 
 @property (nonatomic, strong) LQYHTTPSessionManager *manager; /**< 请求管理者 */
 
-@property (nonatomic, strong) NSArray <LQYTopic *> *topics; /**< 存放数组模型 */
+@property (nonatomic, strong) NSMutableArray <LQYTopic *> *topics; /**< 存放数组模型 */
+
+@property (nonatomic, copy) NSString *maxtime; /**< 用来存储加载下一页的参数 */
+
 @end
 
 static NSString * const topicId = @"topicCell";
@@ -59,20 +63,52 @@ static NSString * const topicId = @"topicCell";
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     // 注册
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([LQYTopicCell class]) bundle:nil] forCellReuseIdentifier:topicId];
-   /*
-    // 系统做法
-    UIRefreshControl *refControl = [[UIRefreshControl alloc]init];
-    [refControl addTarget:self action:@selector(loadNewTopics) forControlEvents:UIControlEventValueChanged];
-    [self.tableView addSubview:refControl];
-    // 进入刷新状态
-    [refControl beginRefreshing];
-    */
     
+    // 下拉刷新
     self.tableView.header = [LQYDIYHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewTopics)];
     // 设置 header 的透明度
     self.tableView.header.automaticallyChangeAlpha = YES;
     // 进入刷新状态
     [self.tableView.header beginRefreshing];
+    
+    // 上拉刷新
+    self.tableView.footer = [LQYDIYFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreTopics)];
+    
+    
+}
+
+- (void)loadMoreTopics
+{
+    // 请求参数
+    NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
+    parameters[@"a"] = @"list";
+    parameters[@"c"] = @"data";
+    parameters[@"maxtime"] = self.maxtime;
+    
+    __weak typeof(self) wealSelf = self;
+    [self.manager GET:LQYRequestUrl parameters:parameters success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
+        // 存储返回下一页的数据
+        wealSelf.maxtime = responseObject[@"info"][@"maxtime"];
+        
+        // 字典转模型
+        NSArray *moreTopics = [LQYTopic objectArrayWithKeyValuesArray:responseObject[@"list"]];
+        // 拼接数组 ,把新返回的数据拼接的帖子数组中
+        [wealSelf.topics addObjectsFromArray:moreTopics];
+        
+        // 刷新数据
+        [wealSelf.tableView reloadData];
+        
+        // 停止刷新
+        [wealSelf.tableView.footer endRefreshing];
+        
+    } failure:^(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error) {
+        if (error) {
+            LQYLog(@"%@",error);
+        }
+        // 停止刷新
+        [wealSelf.tableView.footer endRefreshing];
+
+    }];
 }
 
 /**
@@ -89,6 +125,8 @@ static NSString * const topicId = @"topicCell";
     __weak typeof(self) weakSelf = self;
     
     [self.manager GET:LQYRequestUrl parameters:parameters success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
+        // 存储返回下一页的数据
+        weakSelf.maxtime = responseObject[@"info"][@"maxtime"];
         
         // 字典转模型
         weakSelf.topics = [LQYTopic objectArrayWithKeyValuesArray:responseObject[@"list"]];
@@ -100,7 +138,9 @@ static NSString * const topicId = @"topicCell";
         [weakSelf.tableView.header endRefreshing];
         
     } failure:^(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error) {
-        NSLog(@"%@",error);
+        if (error) {
+            LQYLog(@"%@",error);
+        }
         // 结束刷新
         [weakSelf.tableView.header endRefreshing];
 

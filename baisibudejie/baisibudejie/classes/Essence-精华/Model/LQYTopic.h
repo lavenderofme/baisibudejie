@@ -8,6 +8,21 @@
 
 #import <Foundation/Foundation.h>
 
+typedef enum{
+    // 1为全部，10为图片，29为段子，31为音频，41为视频
+    
+    // 全部
+    LQYTopicTypeAll = 1,
+    // 图片
+    LQYTopicTypePicture= 10,
+    // 段子
+    LQYTopicTypeWord = 29,
+    // 音频
+    LQYTopicTypeVoice = 31,
+    // 视频
+    LQYTopicTypeVideo = 41  
+}LQYTopicType;
+
 @interface LQYTopic : NSObject
 
 @property (nonatomic, copy) NSString *profile_image; /**< 头像 URL */
@@ -22,6 +37,9 @@
 @property (nonatomic, assign) NSInteger ding; /**< 顶 */
 @property (nonatomic, assign) NSInteger repost; /**< 分享/转发 */
 @property (nonatomic, assign) NSInteger comment; /**< 评论 */
+
+@property (nonatomic, assign) LQYTopicType type; /**< 帖子的类型 */
+
 
 
 @end

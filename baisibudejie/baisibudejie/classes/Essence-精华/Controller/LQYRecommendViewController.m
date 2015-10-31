@@ -12,6 +12,7 @@
 #import <SVProgressHUD.h>
 #import "LQYRecommendCell.h"
 #import "LQYRecommend.h"
+#import "LQYDIYHeader.h"
 
 @interface LQYRecommendViewController ()
 
@@ -46,7 +47,8 @@ static NSString *const recomendId = @"recomend";
     [self setupTableView];
     
     // 加载数据
-    [self loadNewRecommendTags];
+    self.tableView.header = [LQYDIYHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewRecommendTags)];
+    [self.tableView.header beginRefreshing];
     
     
 }
@@ -83,18 +85,27 @@ static NSString *const recomendId = @"recomend";
     parameters[@"action"] = @"sub";
     parameters[@"c"] = @"topic";
     
+    __weak typeof(self) weakSelf = self;
     [self.manager GET:LQYRequestUrl parameters:parameters success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
         
-        self.recommends = [LQYRecommend objectArrayWithKeyValuesArray:responseObject];
+        weakSelf.recommends = [LQYRecommend objectArrayWithKeyValuesArray:responseObject];
         
         // 刷新表格
-        [self.tableView reloadData];
+        [weakSelf.tableView reloadData];
+        
+        // 结束刷新
+        [weakSelf.tableView.header endRefreshing];
         
         // 移除蒙版
         [SVProgressHUD dismiss];
     } failure:^(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error) {
-        // 移除蒙版
-        [SVProgressHUD dismiss];
+        
+        if (error) {
+            [SVProgressHUD showErrorWithStatus:@"加载推荐标签失败!"];
+        }
+        
+        // 结束刷新
+        [weakSelf.tableView.header endRefreshing];
         
     }];
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B0BBD041BE44F1500C1BA4D /* LQYDIYFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B0BBD031BE44F1500C1BA4D /* LQYDIYFooter.m */; settings = {ASSET_TAGS = (); }; };
 		8B12D6CC1BD7823F009FC706 /* LQYNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B12D6CB1BD7823F009FC706 /* LQYNavigationController.m */; settings = {ASSET_TAGS = (); }; };
 		8B1F47541BDC6C5700D12672 /* LQYConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B1F47531BDC6C5700D12672 /* LQYConst.m */; settings = {ASSET_TAGS = (); }; };
 		8B6455741BD73EBA009CB9D3 /* LQYEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6455521BD73EBA009CB9D3 /* LQYEssenceViewController.m */; settings = {ASSET_TAGS = (); }; };
@@ -76,6 +77,8 @@
 
 /* Begin PBXFileReference section */
 		0F814D0D4A2EA3525A6C7F1D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		8B0BBD021BE44F1500C1BA4D /* LQYDIYFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQYDIYFooter.h; sourceTree = "<group>"; };
+		8B0BBD031BE44F1500C1BA4D /* LQYDIYFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQYDIYFooter.m; sourceTree = "<group>"; };
 		8B12D6CA1BD7823F009FC706 /* LQYNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQYNavigationController.h; sourceTree = "<group>"; };
 		8B12D6CB1BD7823F009FC706 /* LQYNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQYNavigationController.m; sourceTree = "<group>"; };
 		8B1F47521BDC6C5700D12672 /* LQYConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQYConst.h; sourceTree = "<group>"; };
@@ -266,6 +269,8 @@
 				8B7D2BD61BE0AFDF009B0563 /* LQYTopicCell.xib */,
 				8BEF03D81BE3A49200F50365 /* LQYDIYHeader.h */,
 				8BEF03D91BE3A49200F50365 /* LQYDIYHeader.m */,
+				8B0BBD021BE44F1500C1BA4D /* LQYDIYFooter.h */,
+				8B0BBD031BE44F1500C1BA4D /* LQYDIYFooter.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -723,6 +728,7 @@
 				8B6455791BD73EBA009CB9D3 /* LQYTabBarController.m in Sources */,
 				8B81ABAA1BDCEC1A00FCAB70 /* LQYMeCell.m in Sources */,
 				8BBA5CDF1BDE8B8200C11ED1 /* LQYTitleButton.m in Sources */,
+				8B0BBD041BE44F1500C1BA4D /* LQYDIYFooter.m in Sources */,
 				8BAA92401BDB78A10064F694 /* LQYRecommendViewController.m in Sources */,
 				8B6455771BD73EBA009CB9D3 /* LQYNewViewController.m in Sources */,
 				8B6455761BD73EBA009CB9D3 /* LQYMeViewController.m in Sources */,
