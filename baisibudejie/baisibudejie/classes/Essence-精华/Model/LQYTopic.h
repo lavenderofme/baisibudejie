@@ -40,6 +40,9 @@ typedef enum{
 
 @property (nonatomic, assign) LQYTopicType type; /**< 帖子的类型 */
 
+@property (nonatomic, strong) NSArray *top_cmt; /**< 最热评论 */
+
+
 
 
 @end

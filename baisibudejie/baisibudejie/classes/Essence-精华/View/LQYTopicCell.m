@@ -8,6 +8,8 @@
 
 #import "LQYTopicCell.h"
 #import "LQYTopic.h"
+#import "LQYComment.h"
+#import "LQYUser.h"
 
 @interface LQYTopicCell()
 @property (weak, nonatomic) IBOutlet UIImageView *profileImageView;
@@ -18,6 +20,11 @@
 @property (weak, nonatomic) IBOutlet UIButton *caiButton;
 @property (weak, nonatomic) IBOutlet UIButton *repostButton;
 @property (weak, nonatomic) IBOutlet UIButton *commentButton;
+
+
+/** 最热评论整体 */
+@property (weak, nonatomic) IBOutlet UIView *topCmtView;
+@property (weak, nonatomic) IBOutlet UILabel *topCmtContent;
 
 @end
 
@@ -37,15 +44,32 @@
     self.createdLabel.text = topic.created_at;
     self.text_label.text = topic.text;
     
-    if (topic.type == LQYTopicTypePicture) {
-        NSLog(@"图片");
-    } else if (topic.type == LQYTopicTypeWord) {
-        NSLog(@"段子");
-    }else if (topic.type == LQYTopicTypeVoice) {
-        NSLog(@"音频");
+    if (topic.top_cmt.count) {
+        
+        self.topCmtView.hidden = NO;
+        
+        // 取出最热评论的字典
+        LQYComment *topComment = topic.top_cmt.firstObject;
+        // 内容
+        NSString *content = topComment.content;
+        // 用户名
+        NSString *username = topComment.user.username;
+        // 设置数据
+        self.topCmtContent.text = [NSString stringWithFormat:@"%@: %@",username,content];
+        
     }else {
-        NSLog(@"视频");
+        self.topCmtView.hidden = YES;
     }
+    
+//    if (topic.type == LQYTopicTypePicture) {
+//        NSLog(@"图片");
+//    } else if (topic.type == LQYTopicTypeWord) {
+//        NSLog(@"段子");
+//    }else if (topic.type == LQYTopicTypeVoice) {
+//        NSLog(@"音频");
+//    }else {
+//        NSLog(@"视频");
+//    }
     
     [self setupButton:self.dingButton number:topic.ding title:@"顶"];
     [self setupButton:self.caiButton number:topic.cai title:@"踩"];

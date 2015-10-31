@@ -30,6 +30,8 @@
 		8B81ABA41BDC9B0500FCAB70 /* UIImageView+LQYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B81ABA31BDC9B0500FCAB70 /* UIImageView+LQYExtension.m */; settings = {ASSET_TAGS = (); }; };
 		8B81ABA71BDCE7EE00FCAB70 /* LQYHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B81ABA61BDCE7EE00FCAB70 /* LQYHTTPSessionManager.m */; settings = {ASSET_TAGS = (); }; };
 		8B81ABAA1BDCEC1A00FCAB70 /* LQYMeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B81ABA91BDCEC1A00FCAB70 /* LQYMeCell.m */; settings = {ASSET_TAGS = (); }; };
+		8B886E0F1BE4665B00B2F8E7 /* LQYComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B886E0E1BE4665B00B2F8E7 /* LQYComment.m */; settings = {ASSET_TAGS = (); }; };
+		8B886E121BE4667800B2F8E7 /* LQYUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B886E111BE4667800B2F8E7 /* LQYUser.m */; settings = {ASSET_TAGS = (); }; };
 		8B966AE91BDB7320001294EB /* LQYLoginRegisterTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B966AE81BDB7320001294EB /* LQYLoginRegisterTextField.m */; settings = {ASSET_TAGS = (); }; };
 		8B9693101BDB5F5C00E03479 /* UIView+LQYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B96930F1BDB5F5C00E03479 /* UIView+LQYExtension.m */; settings = {ASSET_TAGS = (); }; };
 		8BAA92401BDB78A10064F694 /* LQYRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BAA923F1BDB78A10064F694 /* LQYRecommendViewController.m */; settings = {ASSET_TAGS = (); }; };
@@ -122,6 +124,10 @@
 		8B81ABA61BDCE7EE00FCAB70 /* LQYHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQYHTTPSessionManager.m; sourceTree = "<group>"; };
 		8B81ABA81BDCEC1A00FCAB70 /* LQYMeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQYMeCell.h; sourceTree = "<group>"; };
 		8B81ABA91BDCEC1A00FCAB70 /* LQYMeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQYMeCell.m; sourceTree = "<group>"; };
+		8B886E0D1BE4665B00B2F8E7 /* LQYComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQYComment.h; sourceTree = "<group>"; };
+		8B886E0E1BE4665B00B2F8E7 /* LQYComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQYComment.m; sourceTree = "<group>"; };
+		8B886E101BE4667800B2F8E7 /* LQYUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQYUser.h; sourceTree = "<group>"; };
+		8B886E111BE4667800B2F8E7 /* LQYUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQYUser.m; sourceTree = "<group>"; };
 		8B966AE71BDB7320001294EB /* LQYLoginRegisterTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQYLoginRegisterTextField.h; sourceTree = "<group>"; };
 		8B966AE81BDB7320001294EB /* LQYLoginRegisterTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQYLoginRegisterTextField.m; sourceTree = "<group>"; };
 		8B96930E1BDB5F5C00E03479 /* UIView+LQYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LQYExtension.h"; sourceTree = "<group>"; };
@@ -252,6 +258,10 @@
 				8BAA924A1BDB80E90064F694 /* LQYRecommend.m */,
 				8B7D2BD11BE0AA76009B0563 /* LQYTopic.h */,
 				8B7D2BD21BE0AA76009B0563 /* LQYTopic.m */,
+				8B886E0D1BE4665B00B2F8E7 /* LQYComment.h */,
+				8B886E0E1BE4665B00B2F8E7 /* LQYComment.m */,
+				8B886E101BE4667800B2F8E7 /* LQYUser.h */,
+				8B886E111BE4667800B2F8E7 /* LQYUser.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -740,6 +750,8 @@
 				8BEF03DA1BE3A49200F50365 /* LQYDIYHeader.m in Sources */,
 				8B64557A1BD73EBA009CB9D3 /* main.m in Sources */,
 				8BEE63151BDD067400056718 /* LQYSquare.m in Sources */,
+				8B886E121BE4667800B2F8E7 /* LQYUser.m in Sources */,
+				8B886E0F1BE4665B00B2F8E7 /* LQYComment.m in Sources */,
 				8B12D6CC1BD7823F009FC706 /* LQYNavigationController.m in Sources */,
 				8B81ABA71BDCE7EE00FCAB70 /* LQYHTTPSessionManager.m in Sources */,
 				8BBE429B1BE258A0008C2E4C /* NSDate+LQYExtension.m in Sources */,

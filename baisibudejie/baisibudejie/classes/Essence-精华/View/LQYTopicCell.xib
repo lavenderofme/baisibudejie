@@ -2,15 +2,16 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" shouldIndentWhileEditing="NO" reuseIdentifier="topicCell" rowHeight="158" id="KGk-i7-Jjw" customClass="LQYTopicCell">
-            <rect key="frame" x="0.0" y="0.0" width="389" height="158"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" shouldIndentWhileEditing="NO" reuseIdentifier="topicCell" rowHeight="295" id="KGk-i7-Jjw" customClass="LQYTopicCell">
+            <rect key="frame" x="0.0" y="0.0" width="421" height="295"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="389" height="157.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="421" height="294.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Tcq-LE-vRY" userLabel="头像">
@@ -27,13 +28,13 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lki-Yb-Vb0" userLabel="内容">
-                        <rect key="frame" x="10" y="60" width="369" height="18"/>
+                        <rect key="frame" x="10" y="60" width="401" height="18"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pzk-ab-NCH" userLabel="更多">
-                        <rect key="frame" x="355" y="10" width="24" height="22"/>
+                        <rect key="frame" x="387" y="10" width="24" height="22"/>
                         <state key="normal" image="cellmorebtnnormal"/>
                         <state key="highlighted" image="cellmorebtnclick"/>
                         <connections>
@@ -41,16 +42,16 @@
                         </connections>
                     </button>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fAP-g5-1mQ" userLabel="底部工具条">
-                        <rect key="frame" x="0.0" y="120.5" width="389" height="37"/>
+                        <rect key="frame" x="0.0" y="257" width="421" height="37"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cell-content-line" translatesAutoresizingMaskIntoConstraints="NO" id="9Em-PU-P7H">
-                                <rect key="frame" x="0.0" y="0.0" width="389" height="1"/>
+                                <rect key="frame" x="0.0" y="0.0" width="421" height="1"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="lNo-UQ-ehp"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lBC-E3-4cp">
-                                <rect key="frame" x="0.0" y="1" width="97.5" height="36"/>
+                                <rect key="frame" x="0.0" y="1" width="105.5" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
@@ -62,7 +63,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kfs-CP-9wk">
-                                <rect key="frame" x="195" y="1" width="97.5" height="36"/>
+                                <rect key="frame" x="210" y="1" width="105.5" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
@@ -74,7 +75,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w8e-ms-CeP">
-                                <rect key="frame" x="292" y="1" width="97" height="36"/>
+                                <rect key="frame" x="316" y="1" width="105" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
@@ -86,25 +87,25 @@
                                 </state>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cell-button-line" translatesAutoresizingMaskIntoConstraints="NO" id="S0U-79-9iE">
-                                <rect key="frame" x="97" y="1" width="1" height="36"/>
+                                <rect key="frame" x="105" y="1" width="1" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="1" id="vjX-Jp-2wH"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cell-button-line" translatesAutoresizingMaskIntoConstraints="NO" id="RqO-za-gIG">
-                                <rect key="frame" x="195" y="1" width="1" height="36"/>
+                                <rect key="frame" x="210" y="1" width="1" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="1" id="EV1-C4-w7t"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cell-button-line" translatesAutoresizingMaskIntoConstraints="NO" id="cRF-Xb-zM9">
-                                <rect key="frame" x="292" y="1" width="1" height="36"/>
+                                <rect key="frame" x="316" y="1" width="1" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="1" id="Cjv-PI-cAN"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kN4-4X-OQj">
-                                <rect key="frame" x="98" y="1" width="97" height="36"/>
+                                <rect key="frame" x="105" y="1" width="105" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
@@ -155,15 +156,46 @@
                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OTL-m7-noE" userLabel="最热评论View">
+                        <rect key="frame" x="18" y="182" width="385" height="65"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最热评论" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sv5-Q3-hTA">
+                                <rect key="frame" x="0.0" y="0.0" width="60" height="18"/>
+                                <color key="backgroundColor" red="1" green="0.72894147389999997" blue="0.81597396349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最热评论最热评论最热评论最热评论最热评论最热评论最热评论最热评论最热评论最热评论最热评论最热评论最热评论最热评论最热评论最热评论最热评论最热评论最热评论最热评论" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j56-59-2ZS" userLabel="评论内容">
+                                <rect key="frame" x="0.0" y="18" width="385" height="47"/>
+                                <color key="backgroundColor" red="1" green="0.91329642249999998" blue="0.82769769790000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Sv5-Q3-hTA" firstAttribute="top" secondItem="OTL-m7-noE" secondAttribute="top" id="Q5z-Mo-X2X"/>
+                            <constraint firstItem="j56-59-2ZS" firstAttribute="top" secondItem="Sv5-Q3-hTA" secondAttribute="bottom" id="afp-mt-t5Z"/>
+                            <constraint firstItem="j56-59-2ZS" firstAttribute="leading" secondItem="OTL-m7-noE" secondAttribute="leading" id="mCI-z1-Nc4"/>
+                            <constraint firstItem="Sv5-Q3-hTA" firstAttribute="leading" secondItem="OTL-m7-noE" secondAttribute="leading" id="sB1-ts-STI"/>
+                            <constraint firstAttribute="bottom" secondItem="j56-59-2ZS" secondAttribute="bottom" id="uyy-1d-bMI"/>
+                            <constraint firstAttribute="trailing" secondItem="j56-59-2ZS" secondAttribute="trailing" id="zow-op-pXq"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <constraints>
                     <constraint firstItem="lki-Yb-Vb0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="17f-xE-pEg"/>
                     <constraint firstItem="lki-Yb-Vb0" firstAttribute="trailing" secondItem="Pzk-ab-NCH" secondAttribute="trailing" id="2ul-4K-0k7"/>
+                    <constraint firstItem="fAP-g5-1mQ" firstAttribute="top" secondItem="OTL-m7-noE" secondAttribute="bottom" constant="10" id="8bJ-fm-sqy"/>
+                    <constraint firstItem="OTL-m7-noE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="CIg-HC-22U"/>
                     <constraint firstAttribute="trailing" secondItem="fAP-g5-1mQ" secondAttribute="trailing" id="LEE-jK-PZJ"/>
                     <constraint firstItem="fAP-g5-1mQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="LmY-NK-rSa"/>
                     <constraint firstItem="Pzk-ab-NCH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="PxC-Wx-BHR"/>
                     <constraint firstAttribute="trailing" secondItem="Pzk-ab-NCH" secondAttribute="trailing" constant="10" id="V7V-va-pfZ"/>
                     <constraint firstItem="Tcq-LE-vRY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="ccb-Al-imZ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="OTL-m7-noE" secondAttribute="trailing" constant="10" id="frm-HM-0lS"/>
                     <constraint firstItem="A0p-fN-mt1" firstAttribute="bottom" secondItem="Tcq-LE-vRY" secondAttribute="bottom" id="ged-AQ-aS5"/>
                     <constraint firstAttribute="bottom" secondItem="fAP-g5-1mQ" secondAttribute="bottom" id="hsV-eF-Hne"/>
                     <constraint firstItem="Tcq-LE-vRY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="j0G-sd-ab6"/>
@@ -182,8 +214,10 @@
                 <outlet property="profileImageView" destination="Tcq-LE-vRY" id="vk4-sC-nbB"/>
                 <outlet property="repostButton" destination="kfs-CP-9wk" id="uj6-7H-lYO"/>
                 <outlet property="text_label" destination="lki-Yb-Vb0" id="p5c-8a-Hw6"/>
+                <outlet property="topCmtContent" destination="j56-59-2ZS" id="5Xh-Sz-a69"/>
+                <outlet property="topCmtView" destination="OTL-m7-noE" id="ym5-JY-gbF"/>
             </connections>
-            <point key="canvasLocation" x="95.5" y="189"/>
+            <point key="canvasLocation" x="103.5" y="257.5"/>
         </tableViewCell>
     </objects>
     <resources>

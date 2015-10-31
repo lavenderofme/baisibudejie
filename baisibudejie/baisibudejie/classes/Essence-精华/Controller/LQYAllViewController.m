@@ -45,6 +45,8 @@ static NSString * const topicId = @"topicCell";
     //设置 tableView
     [self setupTableView];
     
+    // 属性数据
+    [self refreshTopics];
 }
 
 /**
@@ -63,7 +65,13 @@ static NSString * const topicId = @"topicCell";
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     // 注册
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([LQYTopicCell class]) bundle:nil] forCellReuseIdentifier:topicId];
-    
+}
+
+/**
+ *  属性数据
+ */
+- (void)refreshTopics
+{
     // 下拉刷新
     self.tableView.header = [LQYDIYHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewTopics)];
     // 设置 header 的透明度
@@ -73,10 +81,11 @@ static NSString * const topicId = @"topicCell";
     
     // 上拉刷新
     self.tableView.footer = [LQYDIYFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreTopics)];
-    
-    
 }
-
+#pragma mark - 刷新数据
+/**
+ *  上拉刷新加载更多数据
+ */
 - (void)loadMoreTopics
 {
     // 请求参数
@@ -87,11 +96,25 @@ static NSString * const topicId = @"topicCell";
     
     __weak typeof(self) wealSelf = self;
     [self.manager GET:LQYRequestUrl parameters:parameters success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
+        
+//        // 找出最热评论帖子的索引
+//        int i = 0;
+//        NSArray *dictarr = responseObject[@"list"];
+//        for (NSMutableDictionary *dic in dictarr) {
+//            NSArray *top_cmt = dic[@"top_cmt"];
+//            if (top_cmt.count) {
+//                NSLog(@"%zd",i);
+//            }
+//            i++;
+//        }
+//        LQYWriteToPlist(responseObject, @"top_cc");
+        
         // 存储返回下一页的数据
         wealSelf.maxtime = responseObject[@"info"][@"maxtime"];
         
         // 字典转模型
         NSArray *moreTopics = [LQYTopic objectArrayWithKeyValuesArray:responseObject[@"list"]];
+        
         // 拼接数组 ,把新返回的数据拼接的帖子数组中
         [wealSelf.topics addObjectsFromArray:moreTopics];
         
@@ -112,7 +135,7 @@ static NSString * const topicId = @"topicCell";
 }
 
 /**
- *  加载数据
+ *  下拉刷新加载数据
  */
 - (void)loadNewTopics
 {
@@ -125,6 +148,19 @@ static NSString * const topicId = @"topicCell";
     __weak typeof(self) weakSelf = self;
     
     [self.manager GET:LQYRequestUrl parameters:parameters success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
+        
+//        // 找出最热评论帖子的索引
+//        int i = 0;
+//        NSArray *dictarr = responseObject[@"list"];
+//        for (NSMutableDictionary *dic in dictarr) {
+//            NSArray *top_cmt = dic[@"top_cmt"];
+//            if (top_cmt.count) {
+//                NSLog(@"%zd",i);
+//            }
+//            i++;
+//        }
+//        LQYWriteToPlist(responseObject, @"top_c");
+        
         // 存储返回下一页的数据
         weakSelf.maxtime = responseObject[@"info"][@"maxtime"];
         
@@ -148,7 +184,7 @@ static NSString * const topicId = @"topicCell";
     
 }
 
-#pragma mark - Table view data source
+#pragma mark - tableView的代理方法
 /**
  * 返回一共有多少行
  */

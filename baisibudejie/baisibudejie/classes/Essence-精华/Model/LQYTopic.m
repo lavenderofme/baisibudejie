@@ -7,8 +7,17 @@
 //
 
 #import "LQYTopic.h"
+#import <MJExtension.h>
 
 @implementation LQYTopic
+
+/**
+ *  声明数组中存放什么类型的模型
+ */
++ (NSDictionary *)objectClassInArray
+{
+    return @{@"top_cmt" : @"LQYComment" };
+}
 
 /*
  1.今年
