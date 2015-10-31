@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 @class LQYUser;
 
-@interface LQYTopComment : NSObject
+@interface LQYComment : NSObject
 
 @property (nonatomic, strong) NSString *content; /**< 最热评论的内容 */
 @property (nonatomic, strong) LQYUser *user; /**< 最热评论的用户信息 */

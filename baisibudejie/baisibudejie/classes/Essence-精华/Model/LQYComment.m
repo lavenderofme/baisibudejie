@@ -6,8 +6,8 @@
 //  Copyright © 2015年 shasha. All rights reserved.
 //
 
-#import "LQYTopComment.h"
+#import "LQYComment.h"
 
-@implementation LQYTopComment
+@implementation LQYComment
 
 @end

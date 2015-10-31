@@ -10,4 +10,5 @@
 
 @interface LQYUser : NSObject
 
+@property (nonatomic, strong) NSString *username; /**< 用户名 */
 @end
