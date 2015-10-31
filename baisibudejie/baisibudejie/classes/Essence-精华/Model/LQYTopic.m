@@ -14,11 +14,17 @@
 /**
  *  声明数组中存放什么类型的模型
  */
-+ (NSDictionary *)objectClassInArray
+//+ (NSDictionary *)objectClassInArray
+//{
+//    return @{@"top_cmt" : @"LQYComment" };
+//}
+/**
+ * 声明模型属性对应的字典 key
+ */
++ (NSDictionary *)replacedKeyFromPropertyName
 {
-    return @{@"top_cmt" : @"LQYComment" };
+    return @{@"topCmt" : @"top_cmt[0]"};
 }
-
 /*
  1.今年
  1> 今天

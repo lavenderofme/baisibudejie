@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+@class LQYComment;
 
 typedef enum{
     // 1为全部，10为图片，29为段子，31为音频，41为视频
@@ -40,7 +41,7 @@ typedef enum{
 
 @property (nonatomic, assign) LQYTopicType type; /**< 帖子的类型 */
 
-@property (nonatomic, strong) NSArray *top_cmt; /**< 最热评论 */
+@property (nonatomic, strong) LQYComment *topCmt; /**< 最热评论 */
 
 
 

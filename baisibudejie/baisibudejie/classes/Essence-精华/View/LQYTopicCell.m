@@ -44,16 +44,15 @@
     self.createdLabel.text = topic.created_at;
     self.text_label.text = topic.text;
     
-    if (topic.top_cmt.count) {
+    // 最热评论
+    if (topic.topCmt) { // 有最热评论
         
         self.topCmtView.hidden = NO;
-        
-        // 取出最热评论的字典
-        LQYComment *topComment = topic.top_cmt.firstObject;
+
         // 内容
-        NSString *content = topComment.content;
+        NSString *content = topic.topCmt.content;
         // 用户名
-        NSString *username = topComment.user.username;
+        NSString *username = topic.topCmt.user.username;
         // 设置数据
         self.topCmtContent.text = [NSString stringWithFormat:@"%@: %@",username,content];
         
