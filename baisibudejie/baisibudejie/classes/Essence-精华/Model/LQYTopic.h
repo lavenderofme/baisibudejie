@@ -47,6 +47,9 @@ typedef enum{
 @property (nonatomic, strong) NSString *middle_image; /**< 返回中图片 */
 @property (nonatomic, strong) NSString * large_image; /**< 返回大图片 */
 @property (nonatomic, assign) BOOL is_gif; /**< 是不是 gif 图片 */
+@property (nonatomic, assign) NSInteger playcount; /**< 播放数量 */
+@property (nonatomic, assign) NSInteger voicetime; /**< 声音文件的长度 */
+@property (nonatomic, assign) NSInteger videotime; /**< 视频文件的长度 */
 
 // 赋值属性
 @property (nonatomic, assign, getter=isBigPicture) BOOL bigPicture; /**< 是不是大图 */

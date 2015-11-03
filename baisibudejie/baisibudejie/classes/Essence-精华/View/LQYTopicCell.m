@@ -11,6 +11,9 @@
 #import "LQYComment.h"
 #import "LQYUser.h"
 #import "LQYTopicPictureView.h"
+#import "LQYTopicVideoView.h"
+#import "LQYTopicVoiceView.h"
+
 
 @interface LQYTopicCell()
 @property (weak, nonatomic) IBOutlet UIImageView *profileImageView;
@@ -29,6 +32,8 @@
 
 /** 中间控件 */
 @property (nonatomic, weak) LQYTopicPictureView *pictureView; /**< 图片控件 */
+@property (nonatomic, weak) LQYTopicVoiceView *voiceView; /**< 声音控件 */
+@property (nonatomic, weak) LQYTopicVideoView *videoView; /**< 视频控件 */
 
 @end
 
@@ -46,6 +51,28 @@
     return _pictureView;
 }
 
+/** 图片控件 属性的懒加载 */
+- (LQYTopicVoiceView *)voiceView
+{
+    if (!_voiceView) {
+        LQYTopicVoiceView *voiceView = [ LQYTopicVoiceView voiceView];
+        [self.contentView addSubview:voiceView];
+        _voiceView = voiceView;
+    }
+    return _voiceView;
+}
+
+/** 图片控件 属性的懒加载 */
+- (LQYTopicVideoView *)videoView
+{
+    if (!_videoView) {
+        LQYTopicVideoView *videoView = [LQYTopicVideoView videoView];
+        [self.contentView addSubview:videoView];
+        _videoView = videoView;
+    }
+    
+    return _videoView;
+}
 
 - (void)awakeFromNib
 {
@@ -81,16 +108,34 @@
         self.pictureView.hidden = NO;
         // 设置数据
         self.pictureView.topic = topic;
-        
         // 设置尺寸
         self.pictureView.frame = topic.centerFrame;
         
-    } else if (topic.type == LQYTopicTypeWord) { // 段子
-        self.pictureView.hidden = YES;
+        self.voiceView.hidden = YES;
+        self.videoView.hidden= YES;
+        
     }else if (topic.type == LQYTopicTypeVoice) { // 音频
+        self.voiceView.hidden = NO;
+        // 设置数据
+        self.voiceView.topic = topic;
+        // 设置尺寸
+        self.voiceView.frame = topic.centerFrame;
+        
+        self.pictureView.hidden = YES;
         self.pictureView.hidden = YES;
     }else if (topic.type == LQYTopicTypeVideo) { // 视频
+        self.videoView.hidden = NO;
+        // 设置数据
+        self.videoView.topic = topic;
+        // 设置尺寸
+        self.videoView.frame = topic.centerFrame;
+
+        self.voiceView.hidden = YES;
         self.pictureView.hidden = YES;
+    }else if (topic.type == LQYTopicTypeWord) { // 段子
+        self.pictureView.hidden = YES;
+        self.voiceView.hidden = YES;
+        self.videoView.hidden = YES;
     }
     [self setupButton:self.dingButton number:topic.ding title:@"顶"];
     [self setupButton:self.caiButton number:topic.cai title:@"踩"];

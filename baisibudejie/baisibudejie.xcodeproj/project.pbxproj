@@ -39,6 +39,10 @@
 		8B8F16731BE9010200795B3F /* LQYSeeBigViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B8F16711BE9010200795B3F /* LQYSeeBigViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		8B966AE91BDB7320001294EB /* LQYLoginRegisterTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B966AE81BDB7320001294EB /* LQYLoginRegisterTextField.m */; settings = {ASSET_TAGS = (); }; };
 		8B9693101BDB5F5C00E03479 /* UIView+LQYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B96930F1BDB5F5C00E03479 /* UIView+LQYExtension.m */; settings = {ASSET_TAGS = (); }; };
+		8B9AF47D1BE9114400F313FD /* LQYTopicVoiceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9AF47C1BE9114400F313FD /* LQYTopicVoiceView.m */; settings = {ASSET_TAGS = (); }; };
+		8B9AF4801BE9115B00F313FD /* LQYTopicVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9AF47F1BE9115B00F313FD /* LQYTopicVideoView.m */; settings = {ASSET_TAGS = (); }; };
+		8B9AF4821BE9116500F313FD /* LQYTopicVoiceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B9AF4811BE9116500F313FD /* LQYTopicVoiceView.xib */; settings = {ASSET_TAGS = (); }; };
+		8B9AF4841BE9117500F313FD /* LQYTopicVideoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B9AF4831BE9117500F313FD /* LQYTopicVideoView.xib */; settings = {ASSET_TAGS = (); }; };
 		8BAA92401BDB78A10064F694 /* LQYRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BAA923F1BDB78A10064F694 /* LQYRecommendViewController.m */; settings = {ASSET_TAGS = (); }; };
 		8BAA92471BDB795B0064F694 /* LQYRecommendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BAA92451BDB795B0064F694 /* LQYRecommendCell.m */; settings = {ASSET_TAGS = (); }; };
 		8BAA92481BDB795B0064F694 /* LQYRecommendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BAA92461BDB795B0064F694 /* LQYRecommendCell.xib */; settings = {ASSET_TAGS = (); }; };
@@ -145,6 +149,12 @@
 		8B966AE81BDB7320001294EB /* LQYLoginRegisterTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQYLoginRegisterTextField.m; sourceTree = "<group>"; };
 		8B96930E1BDB5F5C00E03479 /* UIView+LQYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LQYExtension.h"; sourceTree = "<group>"; };
 		8B96930F1BDB5F5C00E03479 /* UIView+LQYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LQYExtension.m"; sourceTree = "<group>"; };
+		8B9AF47B1BE9114400F313FD /* LQYTopicVoiceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQYTopicVoiceView.h; sourceTree = "<group>"; };
+		8B9AF47C1BE9114400F313FD /* LQYTopicVoiceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQYTopicVoiceView.m; sourceTree = "<group>"; };
+		8B9AF47E1BE9115B00F313FD /* LQYTopicVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQYTopicVideoView.h; sourceTree = "<group>"; };
+		8B9AF47F1BE9115B00F313FD /* LQYTopicVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQYTopicVideoView.m; sourceTree = "<group>"; };
+		8B9AF4811BE9116500F313FD /* LQYTopicVoiceView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LQYTopicVoiceView.xib; sourceTree = "<group>"; };
+		8B9AF4831BE9117500F313FD /* LQYTopicVideoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LQYTopicVideoView.xib; sourceTree = "<group>"; };
 		8BAA923E1BDB78A10064F694 /* LQYRecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQYRecommendViewController.h; sourceTree = "<group>"; };
 		8BAA923F1BDB78A10064F694 /* LQYRecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQYRecommendViewController.m; sourceTree = "<group>"; };
 		8BAA92441BDB795B0064F694 /* LQYRecommendCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQYRecommendCell.h; sourceTree = "<group>"; };
@@ -250,6 +260,12 @@
 				8B50DBAC1BE4A06D00C02214 /* LQYTopicPictureView.h */,
 				8B50DBAD1BE4A06D00C02214 /* LQYTopicPictureView.m */,
 				8B50DBB01BE4A0C900C02214 /* LQYTopicPictureView.xib */,
+				8B9AF47B1BE9114400F313FD /* LQYTopicVoiceView.h */,
+				8B9AF47C1BE9114400F313FD /* LQYTopicVoiceView.m */,
+				8B9AF4811BE9116500F313FD /* LQYTopicVoiceView.xib */,
+				8B9AF47E1BE9115B00F313FD /* LQYTopicVideoView.h */,
+				8B9AF47F1BE9115B00F313FD /* LQYTopicVideoView.m */,
+				8B9AF4831BE9117500F313FD /* LQYTopicVideoView.xib */,
 			);
 			name = topic;
 			sourceTree = "<group>";
@@ -700,9 +716,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B50DBB11BE4A0C900C02214 /* LQYTopicPictureView.xib in Resources */,
+				8B9AF4841BE9117500F313FD /* LQYTopicVideoView.xib in Resources */,
 				8BBF190E1BDD296B00B2FC61 /* LQYWebViewController.xib in Resources */,
 				8BEE20801BD7E7DE00B49C3B /* LQYFriendTrendsViewController.storyboard in Resources */,
 				8B7D2BD81BE0AFDF009B0563 /* LQYTopicCell.xib in Resources */,
+				8B9AF4821BE9116500F313FD /* LQYTopicVoiceView.xib in Resources */,
 				8BCF46271BD67EF2008F4662 /* Assets.xcassets in Resources */,
 				8B8F16731BE9010200795B3F /* LQYSeeBigViewController.xib in Resources */,
 				8BAA92481BDB795B0064F694 /* LQYRecommendCell.xib in Resources */,
@@ -774,6 +792,7 @@
 				8BEE63181BDD216600056718 /* LQYSquareButton.m in Sources */,
 				8B966AE91BDB7320001294EB /* LQYLoginRegisterTextField.m in Sources */,
 				8BAA924B1BDB80E90064F694 /* LQYRecommend.m in Sources */,
+				8B9AF47D1BE9114400F313FD /* LQYTopicVoiceView.m in Sources */,
 				8BEE63121BDD049100056718 /* LQYMeFooter.m in Sources */,
 				8BD7F9D81BE069390002CF5E /* LQYVoiceViewController.m in Sources */,
 				8B6455791BD73EBA009CB9D3 /* LQYTabBarController.m in Sources */,
@@ -799,6 +818,7 @@
 				8BD7F9D51BE0692D0002CF5E /* LQYVideoViewController.m in Sources */,
 				8BFB72511BDB13C60013D7A6 /* LQYQuickLoginButton.m in Sources */,
 				8B7D2BD31BE0AA76009B0563 /* LQYTopic.m in Sources */,
+				8B9AF4801BE9115B00F313FD /* LQYTopicVideoView.m in Sources */,
 				8B1F47541BDC6C5700D12672 /* LQYConst.m in Sources */,
 				8BD7F9DB1BE0694A0002CF5E /* LQYPictureViewController.m in Sources */,
 				8B50DBAE1BE4A06D00C02214 /* LQYTopicPictureView.m in Sources */,
