@@ -91,6 +91,7 @@ static NSString * const topicId = @"topicCell";
     // 请求参数
     NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
     parameters[@"a"] = @"list";
+    parameters[@"type"] = @1;
     parameters[@"c"] = @"data";
     parameters[@"maxtime"] = self.maxtime;
     

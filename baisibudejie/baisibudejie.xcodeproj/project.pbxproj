@@ -35,6 +35,8 @@
 		8B81ABAA1BDCEC1A00FCAB70 /* LQYMeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B81ABA91BDCEC1A00FCAB70 /* LQYMeCell.m */; settings = {ASSET_TAGS = (); }; };
 		8B886E0F1BE4665B00B2F8E7 /* LQYComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B886E0E1BE4665B00B2F8E7 /* LQYComment.m */; settings = {ASSET_TAGS = (); }; };
 		8B886E121BE4667800B2F8E7 /* LQYUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B886E111BE4667800B2F8E7 /* LQYUser.m */; settings = {ASSET_TAGS = (); }; };
+		8B8F16721BE9010200795B3F /* LQYSeeBigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8F16701BE9010200795B3F /* LQYSeeBigViewController.m */; settings = {ASSET_TAGS = (); }; };
+		8B8F16731BE9010200795B3F /* LQYSeeBigViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B8F16711BE9010200795B3F /* LQYSeeBigViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		8B966AE91BDB7320001294EB /* LQYLoginRegisterTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B966AE81BDB7320001294EB /* LQYLoginRegisterTextField.m */; settings = {ASSET_TAGS = (); }; };
 		8B9693101BDB5F5C00E03479 /* UIView+LQYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B96930F1BDB5F5C00E03479 /* UIView+LQYExtension.m */; settings = {ASSET_TAGS = (); }; };
 		8BAA92401BDB78A10064F694 /* LQYRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BAA923F1BDB78A10064F694 /* LQYRecommendViewController.m */; settings = {ASSET_TAGS = (); }; };
@@ -136,6 +138,9 @@
 		8B886E0E1BE4665B00B2F8E7 /* LQYComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQYComment.m; sourceTree = "<group>"; };
 		8B886E101BE4667800B2F8E7 /* LQYUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQYUser.h; sourceTree = "<group>"; };
 		8B886E111BE4667800B2F8E7 /* LQYUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQYUser.m; sourceTree = "<group>"; };
+		8B8F166F1BE9010200795B3F /* LQYSeeBigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQYSeeBigViewController.h; sourceTree = "<group>"; };
+		8B8F16701BE9010200795B3F /* LQYSeeBigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQYSeeBigViewController.m; sourceTree = "<group>"; };
+		8B8F16711BE9010200795B3F /* LQYSeeBigViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LQYSeeBigViewController.xib; sourceTree = "<group>"; };
 		8B966AE71BDB7320001294EB /* LQYLoginRegisterTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQYLoginRegisterTextField.h; sourceTree = "<group>"; };
 		8B966AE81BDB7320001294EB /* LQYLoginRegisterTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQYLoginRegisterTextField.m; sourceTree = "<group>"; };
 		8B96930E1BDB5F5C00E03479 /* UIView+LQYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LQYExtension.h"; sourceTree = "<group>"; };
@@ -279,6 +284,9 @@
 				8B6455521BD73EBA009CB9D3 /* LQYEssenceViewController.m */,
 				8BAA923E1BDB78A10064F694 /* LQYRecommendViewController.h */,
 				8BAA923F1BDB78A10064F694 /* LQYRecommendViewController.m */,
+				8B8F166F1BE9010200795B3F /* LQYSeeBigViewController.h */,
+				8B8F16701BE9010200795B3F /* LQYSeeBigViewController.m */,
+				8B8F16711BE9010200795B3F /* LQYSeeBigViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -696,6 +704,7 @@
 				8BEE20801BD7E7DE00B49C3B /* LQYFriendTrendsViewController.storyboard in Resources */,
 				8B7D2BD81BE0AFDF009B0563 /* LQYTopicCell.xib in Resources */,
 				8BCF46271BD67EF2008F4662 /* Assets.xcassets in Resources */,
+				8B8F16731BE9010200795B3F /* LQYSeeBigViewController.xib in Resources */,
 				8BAA92481BDB795B0064F694 /* LQYRecommendCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -756,6 +765,7 @@
 			files = (
 				8B64557B1BD73EBA009CB9D3 /* LQYTabBar.m in Sources */,
 				8B6A083F1BD770A900BA98D1 /* UIBarButtonItem+LQYExtension.m in Sources */,
+				8B8F16721BE9010200795B3F /* LQYSeeBigViewController.m in Sources */,
 				8B9693101BDB5F5C00E03479 /* UIView+LQYExtension.m in Sources */,
 				8B81ABA41BDC9B0500FCAB70 /* UIImageView+LQYExtension.m in Sources */,
 				8B74AB261BDE637700F9F6E7 /* NSString+LQYExtension.m in Sources */,
