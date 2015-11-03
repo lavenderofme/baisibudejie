@@ -58,9 +58,9 @@ static NSString * const topicId = @"topicCell";
     self.tableView.contentInset = UIEdgeInsetsMake(104, 0, 49, 0);
     // 设置滚动条的内边距
     self.tableView.scrollIndicatorInsets = self.tableView.contentInset;
-    self.tableView.rowHeight = 200;
     self.tableView.backgroundColor = LQYCommonBgColor;
     
+    //self.tableView.rowHeight = 500;
     // 取消 cell 的分割线
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     // 注册
@@ -96,18 +96,6 @@ static NSString * const topicId = @"topicCell";
     
     __weak typeof(self) wealSelf = self;
     [self.manager GET:LQYRequestUrl parameters:parameters success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
-        
-//        // 找出最热评论帖子的索引
-//        int i = 0;
-//        NSArray *dictarr = responseObject[@"list"];
-//        for (NSMutableDictionary *dic in dictarr) {
-//            NSArray *top_cmt = dic[@"top_cmt"];
-//            if (top_cmt.count) {
-//                NSLog(@"%zd",i);
-//            }
-//            i++;
-//        }
-//        LQYWriteToPlist(responseObject, @"top_cc");
         
         // 存储返回下一页的数据
         wealSelf.maxtime = responseObject[@"info"][@"maxtime"];
@@ -148,19 +136,7 @@ static NSString * const topicId = @"topicCell";
     __weak typeof(self) weakSelf = self;
     
     [self.manager GET:LQYRequestUrl parameters:parameters success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
-        
-//        // 找出最热评论帖子的索引
-//        int i = 0;
-//        NSArray *dictarr = responseObject[@"list"];
-//        for (NSMutableDictionary *dic in dictarr) {
-//            NSArray *top_cmt = dic[@"top_cmt"];
-//            if (top_cmt.count) {
-//                NSLog(@"%zd",i);
-//            }
-//            i++;
-//        }
-//        LQYWriteToPlist(responseObject, @"top_c");
-        
+
         // 存储返回下一页的数据
         weakSelf.maxtime = responseObject[@"info"][@"maxtime"];
         
@@ -184,7 +160,7 @@ static NSString * const topicId = @"topicCell";
     
 }
 
-#pragma mark - tableView的代理方法
+#pragma mark - tableView的数据源方法
 /**
  * 返回一共有多少行
  */
@@ -205,6 +181,13 @@ static NSString * const topicId = @"topicCell";
     cell.topic = topic;
     
     return cell;
+}
+
+#pragma mark - tableView 代理方法
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    return self.topics[indexPath.row].cellHeight;
 }
 
 @end

@@ -10,6 +10,7 @@
 #import "LQYTopic.h"
 #import "LQYComment.h"
 #import "LQYUser.h"
+#import "LQYTopicPictureView.h"
 
 @interface LQYTopicCell()
 @property (weak, nonatomic) IBOutlet UIImageView *profileImageView;
@@ -22,13 +23,29 @@
 @property (weak, nonatomic) IBOutlet UIButton *commentButton;
 
 
-/** 最热评论整体 */
+
 @property (weak, nonatomic) IBOutlet UIView *topCmtView;
 @property (weak, nonatomic) IBOutlet UILabel *topCmtContent;
+
+/** 中间控件 */
+@property (nonatomic, weak) LQYTopicPictureView *pictureView; /**< 图片控件 */
 
 @end
 
 @implementation LQYTopicCell
+
+#pragma mark - 懒加载
+/** 图片控件 属性的懒加载 */
+- (LQYTopicPictureView *)pictureView
+{
+    if (!_pictureView) {
+        LQYTopicPictureView *pictureView = [LQYTopicPictureView pictureView];
+        [self.contentView addSubview:pictureView];
+        _pictureView = pictureView;
+    }
+    return _pictureView;
+}
+
 
 - (void)awakeFromNib
 {
@@ -60,16 +77,21 @@
         self.topCmtView.hidden = YES;
     }
     
-//    if (topic.type == LQYTopicTypePicture) {
-//        NSLog(@"图片");
-//    } else if (topic.type == LQYTopicTypeWord) {
-//        NSLog(@"段子");
-//    }else if (topic.type == LQYTopicTypeVoice) {
-//        NSLog(@"音频");
-//    }else {
-//        NSLog(@"视频");
-//    }
-    
+    if (topic.type == LQYTopicTypePicture) {
+        self.pictureView.hidden = NO;
+        // 设置数据
+        self.pictureView.topic = topic;
+        
+        // 设置尺寸
+        self.pictureView.frame = topic.centerFrame;
+        
+    } else if (topic.type == LQYTopicTypeWord) { // 段子
+        self.pictureView.hidden = YES;
+    }else if (topic.type == LQYTopicTypeVoice) { // 音频
+        self.pictureView.hidden = YES;
+    }else if (topic.type == LQYTopicTypeVideo) { // 视频
+        self.pictureView.hidden = YES;
+    }
     [self setupButton:self.dingButton number:topic.ding title:@"顶"];
     [self setupButton:self.caiButton number:topic.cai title:@"踩"];
     [self setupButton:self.repostButton number:topic.repost title:@"分享"];

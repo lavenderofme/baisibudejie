@@ -27,11 +27,8 @@ typedef enum{
 @interface LQYTopic : NSObject
 
 @property (nonatomic, copy) NSString *profile_image; /**< 头像 URL */
-
 @property (nonatomic, copy) NSString *text; /**< 帖子的内容 */
-
 @property (nonatomic, copy) NSString *name; /**< 发帖人的昵称 */
-
 @property (nonatomic, strong) NSString *created_at ; /**< 帖子创建时间 */
 
 @property (nonatomic, assign) NSInteger cai; /**< 踩 */
@@ -43,6 +40,18 @@ typedef enum{
 
 @property (nonatomic, strong) LQYComment *topCmt; /**< 最热评论 */
 
+@property (nonatomic, assign) CGFloat height; /**< 显示中间图片的高 */
+@property (nonatomic, assign) CGFloat width; /**< 显示中间图片的宽 */
+
+@property (nonatomic, strong) NSString *small_image; /**< 返回小图片 */
+@property (nonatomic, strong) NSString *middle_image; /**< 返回中图片 */
+@property (nonatomic, strong) NSString * large_image; /**< 返回大图片 */
+@property (nonatomic, assign) BOOL is_gif; /**< 是不是 gif 图片 */
+
+// 赋值属性
+@property (nonatomic, assign, getter=isBigPicture) BOOL bigPicture; /**< 是不是大图 */
+@property (nonatomic, assign) CGRect centerFrame; /**< 中间控件的尺寸 */
+@property (nonatomic, assign) CGFloat cellHeight; /**< cell 的高度 */
 
 
 

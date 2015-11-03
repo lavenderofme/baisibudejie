@@ -8,35 +8,13 @@
 
 #import "LQYTopic.h"
 #import <MJExtension.h>
+#import "LQYComment.h"
+#import "LQYUser.h"
 
 @implementation LQYTopic
 
 /**
- *  声明数组中存放什么类型的模型
- */
-//+ (NSDictionary *)objectClassInArray
-//{
-//    return @{@"top_cmt" : @"LQYComment" };
-//}
-/**
- * 声明模型属性对应的字典 key
- */
-+ (NSDictionary *)replacedKeyFromPropertyName
-{
-    return @{@"topCmt" : @"top_cmt[0]"};
-}
-/*
- 1.今年
- 1> 今天
- 1) 时间间隔 >= 1个小时 -> 5小时前
- 2) 1个小时 > 时间间隔 >= 1分钟 -> 25分钟前
- 3) 时间间隔 < 1分钟 -> 刚刚
- 
- 2> 昨天 -> 昨天 17:56:34
- 
- 3> 其他 -> 07-06 19:47:57
- 
- 2.非今年 -> 2014-08-06 19:47:57
+ *  日期处理
  */
 - (NSString *)created_at
 {
@@ -75,6 +53,117 @@
     {
         return _created_at;
     }
+}
+
+/**
+ *  中间控件的 frame
+ */
+//- (CGRect)centerFrame
+//{
+//    // 中间控件的 x
+//    CGFloat centerViewX = LQYMargin;
+//    
+//    // 文字(内容)的 Y
+//    CGFloat textY = 60; // 图片的高度 + 两个 LQYMargin
+//    // 文字(内容)的 W
+//    CGFloat MaxTextW = [UIScreen mainScreen].bounds.size.width - 2 * LQYMargin;
+//    // 文字(内容)的 H
+//    CGFloat textH = [self.text boundingRectWithSize:CGSizeMake(MaxTextW,MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:15]} context:nil].size.height;
+//    
+//    // 中间控件的 y
+//    CGFloat centerViewY = textY + textH + LQYMargin;
+//    
+//    // 中间控件的 W
+//    CGFloat centerViewW = MaxTextW;
+//    
+//    // 中间控件的 H
+//    CGFloat centerViewH = self.height * centerViewW / self.width;
+//    if (centerViewH > [UIScreen mainScreen].bounds.size.height) {
+//        centerViewH = 200;
+//        self.bigPicture = YES;
+//    }
+//   
+//    
+//    return CGRectMake( centerViewX, centerViewY, centerViewW, centerViewH);
+//}
+
+//- (CGFloat)cellHeight
+//{
+//    // 文字(内容)的 Y
+//    CGFloat textY = 60; // 图片的高度 + 两个 LQYMargin
+//    // 文字(内容)的 W
+//    CGFloat MaxTextW = [UIScreen mainScreen].bounds.size.width - 2 * LQYMargin;
+//    // 文字(内容)的 H
+//    CGFloat textH = [self.text boundingRectWithSize:CGSizeMake(MaxTextW,MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:15]} context:nil].size.height;
+//    _cellHeight = textH + textY + LQYMargin;
+//    
+//    if (self.type != LQYTopicTypeWord) { // 有中间控件
+//        
+//        // 中间控件的高度
+//        CGFloat centerH = self.centerFrame.size.height;
+//        _cellHeight += centerH + LQYMargin;
+//    }
+//    
+//    if (self.topCmt) { // 有做热评论
+//        CGFloat topCmtTitleH = 18;
+//        NSString *topCmtContent = [NSString stringWithFormat:@"%@: %@",self.topCmt.user.username,self.topCmt.content];
+//        CGFloat topCmtContentH = [topCmtContent boundingRectWithSize:CGSizeMake(MaxTextW, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:13]} context:nil].size.height;
+//        _cellHeight += topCmtTitleH + topCmtContentH + LQYMargin;
+//        
+//    }
+//    
+//    // 底部工具条
+//    CGFloat bottomToolH = 35;
+//    _cellHeight += bottomToolH + LQYMargin;
+//    
+//    return _cellHeight;
+//}
+
+- (CGFloat)cellHeight
+{
+    // 文字(内容)的 Y
+    CGFloat textY = 60; // 图片的高度 + 两个 LQYMargin
+    // 文字(内容)的 W
+    CGFloat MaxTextW = [UIScreen mainScreen].bounds.size.width - 2 * LQYMargin;
+    // 文字(内容)的 H
+    CGFloat textH = [self.text boundingRectWithSize:CGSizeMake(MaxTextW,MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:15]} context:nil].size.height;
+    _cellHeight = textH + textY + LQYMargin;
+
+    if (self.type != LQYTopicTypeWord) { // 有中间控件
+        
+        //中间控件的 x
+        CGFloat centerViewX = LQYMargin;
+        //中间控件的 y
+        CGFloat centerViewY = textY + textH + LQYMargin;
+        // 中间控件的 W
+        CGFloat centerViewW = MaxTextW;
+        // 中间控件的 H
+        CGFloat centerViewH = self.height * centerViewW / self.width;
+        if (centerViewH > [UIScreen mainScreen].bounds.size.height) {
+            centerViewH = 200;
+            self.bigPicture = YES;
+        }
+        // 设置中件控件的 frame
+        _centerFrame = CGRectMake(centerViewX, centerViewY, centerViewW, centerViewH);
+        
+        // 计算 cell 的高度
+         _cellHeight += centerViewH + LQYMargin;
+
+    }
+
+    if (self.topCmt) { // 有做热评论
+        CGFloat topCmtTitleH = 18;
+        NSString *topCmtContent = [NSString stringWithFormat:@"%@: %@",self.topCmt.user.username,self.topCmt.content];
+        CGFloat topCmtContentH = [topCmtContent boundingRectWithSize:CGSizeMake(MaxTextW, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:13]} context:nil].size.height;
+        _cellHeight += topCmtTitleH + topCmtContentH + LQYMargin;
+
+    }
+
+    // 底部工具条
+    CGFloat bottomToolH = 35;
+    _cellHeight += bottomToolH + LQYMargin;
+
+    return _cellHeight;
 }
 
 @end

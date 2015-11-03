@@ -10,6 +10,9 @@
 		8B0BBD041BE44F1500C1BA4D /* LQYDIYFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B0BBD031BE44F1500C1BA4D /* LQYDIYFooter.m */; settings = {ASSET_TAGS = (); }; };
 		8B12D6CC1BD7823F009FC706 /* LQYNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B12D6CB1BD7823F009FC706 /* LQYNavigationController.m */; settings = {ASSET_TAGS = (); }; };
 		8B1F47541BDC6C5700D12672 /* LQYConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B1F47531BDC6C5700D12672 /* LQYConst.m */; settings = {ASSET_TAGS = (); }; };
+		8B50DBAE1BE4A06D00C02214 /* LQYTopicPictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B50DBAD1BE4A06D00C02214 /* LQYTopicPictureView.m */; settings = {ASSET_TAGS = (); }; };
+		8B50DBB11BE4A0C900C02214 /* LQYTopicPictureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B50DBB01BE4A0C900C02214 /* LQYTopicPictureView.xib */; settings = {ASSET_TAGS = (); }; };
+		8B50DBB51BE4AB8500C02214 /* LQYExtensionConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B50DBB41BE4AB8500C02214 /* LQYExtensionConfig.m */; settings = {ASSET_TAGS = (); }; };
 		8B6455741BD73EBA009CB9D3 /* LQYEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6455521BD73EBA009CB9D3 /* LQYEssenceViewController.m */; settings = {ASSET_TAGS = (); }; };
 		8B6455751BD73EBA009CB9D3 /* LQYFriendTrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6455581BD73EBA009CB9D3 /* LQYFriendTrendsViewController.m */; settings = {ASSET_TAGS = (); }; };
 		8B6455761BD73EBA009CB9D3 /* LQYMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B64555E1BD73EBA009CB9D3 /* LQYMeViewController.m */; settings = {ASSET_TAGS = (); }; };
@@ -85,6 +88,11 @@
 		8B12D6CB1BD7823F009FC706 /* LQYNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQYNavigationController.m; sourceTree = "<group>"; };
 		8B1F47521BDC6C5700D12672 /* LQYConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQYConst.h; sourceTree = "<group>"; };
 		8B1F47531BDC6C5700D12672 /* LQYConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQYConst.m; sourceTree = "<group>"; };
+		8B50DBAC1BE4A06D00C02214 /* LQYTopicPictureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQYTopicPictureView.h; sourceTree = "<group>"; };
+		8B50DBAD1BE4A06D00C02214 /* LQYTopicPictureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQYTopicPictureView.m; sourceTree = "<group>"; };
+		8B50DBB01BE4A0C900C02214 /* LQYTopicPictureView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LQYTopicPictureView.xib; sourceTree = "<group>"; };
+		8B50DBB31BE4AB8500C02214 /* LQYExtensionConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQYExtensionConfig.h; sourceTree = "<group>"; };
+		8B50DBB41BE4AB8500C02214 /* LQYExtensionConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQYExtensionConfig.m; sourceTree = "<group>"; };
 		8B6455511BD73EBA009CB9D3 /* LQYEssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQYEssenceViewController.h; sourceTree = "<group>"; };
 		8B6455521BD73EBA009CB9D3 /* LQYEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQYEssenceViewController.m; sourceTree = "<group>"; };
 		8B6455571BD73EBA009CB9D3 /* LQYFriendTrendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQYFriendTrendsViewController.h; sourceTree = "<group>"; };
@@ -217,6 +225,30 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		8B50DBAF1BE4A07700C02214 /* 刷新控件 */ = {
+			isa = PBXGroup;
+			children = (
+				8BEF03D81BE3A49200F50365 /* LQYDIYHeader.h */,
+				8BEF03D91BE3A49200F50365 /* LQYDIYHeader.m */,
+				8B0BBD021BE44F1500C1BA4D /* LQYDIYFooter.h */,
+				8B0BBD031BE44F1500C1BA4D /* LQYDIYFooter.m */,
+			);
+			name = "刷新控件";
+			sourceTree = "<group>";
+		};
+		8B50DBB21BE4A12C00C02214 /* topic */ = {
+			isa = PBXGroup;
+			children = (
+				8B7D2BD41BE0AFDF009B0563 /* LQYTopicCell.h */,
+				8B7D2BD51BE0AFDF009B0563 /* LQYTopicCell.m */,
+				8B7D2BD61BE0AFDF009B0563 /* LQYTopicCell.xib */,
+				8B50DBAC1BE4A06D00C02214 /* LQYTopicPictureView.h */,
+				8B50DBAD1BE4A06D00C02214 /* LQYTopicPictureView.m */,
+				8B50DBB01BE4A0C900C02214 /* LQYTopicPictureView.xib */,
+			);
+			name = topic;
+			sourceTree = "<group>";
+		};
 		8B64554E1BD73EBA009CB9D3 /* classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -269,18 +301,13 @@
 		8B6455541BD73EBA009CB9D3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8B50DBB21BE4A12C00C02214 /* topic */,
+				8B50DBAF1BE4A07700C02214 /* 刷新控件 */,
 				8BAA92441BDB795B0064F694 /* LQYRecommendCell.h */,
 				8BAA92451BDB795B0064F694 /* LQYRecommendCell.m */,
 				8BAA92461BDB795B0064F694 /* LQYRecommendCell.xib */,
 				8BBA5CDD1BDE8B8200C11ED1 /* LQYTitleButton.h */,
 				8BBA5CDE1BDE8B8200C11ED1 /* LQYTitleButton.m */,
-				8B7D2BD41BE0AFDF009B0563 /* LQYTopicCell.h */,
-				8B7D2BD51BE0AFDF009B0563 /* LQYTopicCell.m */,
-				8B7D2BD61BE0AFDF009B0563 /* LQYTopicCell.xib */,
-				8BEF03D81BE3A49200F50365 /* LQYDIYHeader.h */,
-				8BEF03D91BE3A49200F50365 /* LQYDIYHeader.m */,
-				8B0BBD021BE44F1500C1BA4D /* LQYDIYFooter.h */,
-				8B0BBD031BE44F1500C1BA4D /* LQYDIYFooter.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -423,6 +450,8 @@
 				8B1F47531BDC6C5700D12672 /* LQYConst.m */,
 				8B81ABA51BDCE7EE00FCAB70 /* LQYHTTPSessionManager.h */,
 				8B81ABA61BDCE7EE00FCAB70 /* LQYHTTPSessionManager.m */,
+				8B50DBB31BE4AB8500C02214 /* LQYExtensionConfig.h */,
+				8B50DBB41BE4AB8500C02214 /* LQYExtensionConfig.m */,
 			);
 			path = "Other-其他";
 			sourceTree = "<group>";
@@ -662,6 +691,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B50DBB11BE4A0C900C02214 /* LQYTopicPictureView.xib in Resources */,
 				8BBF190E1BDD296B00B2FC61 /* LQYWebViewController.xib in Resources */,
 				8BEE20801BD7E7DE00B49C3B /* LQYFriendTrendsViewController.storyboard in Resources */,
 				8B7D2BD81BE0AFDF009B0563 /* LQYTopicCell.xib in Resources */,
@@ -729,6 +759,7 @@
 				8B9693101BDB5F5C00E03479 /* UIView+LQYExtension.m in Sources */,
 				8B81ABA41BDC9B0500FCAB70 /* UIImageView+LQYExtension.m in Sources */,
 				8B74AB261BDE637700F9F6E7 /* NSString+LQYExtension.m in Sources */,
+				8B50DBB51BE4AB8500C02214 /* LQYExtensionConfig.m in Sources */,
 				8BAA92471BDB795B0064F694 /* LQYRecommendCell.m in Sources */,
 				8BEE63181BDD216600056718 /* LQYSquareButton.m in Sources */,
 				8B966AE91BDB7320001294EB /* LQYLoginRegisterTextField.m in Sources */,
@@ -760,6 +791,7 @@
 				8B7D2BD31BE0AA76009B0563 /* LQYTopic.m in Sources */,
 				8B1F47541BDC6C5700D12672 /* LQYConst.m in Sources */,
 				8BD7F9DB1BE0694A0002CF5E /* LQYPictureViewController.m in Sources */,
+				8B50DBAE1BE4A06D00C02214 /* LQYTopicPictureView.m in Sources */,
 				8BBF190D1BDD296B00B2FC61 /* LQYWebViewController.m in Sources */,
 				8BD7F9DE1BE069550002CF5E /* LQYWordViewController.m in Sources */,
 				8B74AB291BDE6F9500F9F6E7 /* LQYClearCachesCell.m in Sources */,
