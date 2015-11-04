@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface LQYVideoViewController : UITableViewController
+#import "LQYTopicViewController.h"
+@interface LQYVideoViewController : LQYTopicViewController
 
 @end

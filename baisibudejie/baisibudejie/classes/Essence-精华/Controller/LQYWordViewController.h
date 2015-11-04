@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LQYTopicViewController.h"
 
-@interface LQYWordViewController : UITableViewController
-
+@interface LQYWordViewController : LQYTopicViewController
 @end

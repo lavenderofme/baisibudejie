@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LQYTopicViewController.h"
 
-@interface LQYAllViewController : UITableViewController
+@interface LQYAllViewController : LQYTopicViewController
 
 @end

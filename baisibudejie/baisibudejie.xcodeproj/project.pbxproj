@@ -43,6 +43,7 @@
 		8B9AF4801BE9115B00F313FD /* LQYTopicVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9AF47F1BE9115B00F313FD /* LQYTopicVideoView.m */; settings = {ASSET_TAGS = (); }; };
 		8B9AF4821BE9116500F313FD /* LQYTopicVoiceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B9AF4811BE9116500F313FD /* LQYTopicVoiceView.xib */; settings = {ASSET_TAGS = (); }; };
 		8B9AF4841BE9117500F313FD /* LQYTopicVideoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B9AF4831BE9117500F313FD /* LQYTopicVideoView.xib */; settings = {ASSET_TAGS = (); }; };
+		8BA4D6921BEA558200806EF6 /* LQYTopicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA4D6911BEA558200806EF6 /* LQYTopicViewController.m */; settings = {ASSET_TAGS = (); }; };
 		8BAA92401BDB78A10064F694 /* LQYRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BAA923F1BDB78A10064F694 /* LQYRecommendViewController.m */; settings = {ASSET_TAGS = (); }; };
 		8BAA92471BDB795B0064F694 /* LQYRecommendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BAA92451BDB795B0064F694 /* LQYRecommendCell.m */; settings = {ASSET_TAGS = (); }; };
 		8BAA92481BDB795B0064F694 /* LQYRecommendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BAA92461BDB795B0064F694 /* LQYRecommendCell.xib */; settings = {ASSET_TAGS = (); }; };
@@ -155,6 +156,8 @@
 		8B9AF47F1BE9115B00F313FD /* LQYTopicVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQYTopicVideoView.m; sourceTree = "<group>"; };
 		8B9AF4811BE9116500F313FD /* LQYTopicVoiceView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LQYTopicVoiceView.xib; sourceTree = "<group>"; };
 		8B9AF4831BE9117500F313FD /* LQYTopicVideoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LQYTopicVideoView.xib; sourceTree = "<group>"; };
+		8BA4D6901BEA558200806EF6 /* LQYTopicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQYTopicViewController.h; sourceTree = "<group>"; };
+		8BA4D6911BEA558200806EF6 /* LQYTopicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQYTopicViewController.m; sourceTree = "<group>"; };
 		8BAA923E1BDB78A10064F694 /* LQYRecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQYRecommendViewController.h; sourceTree = "<group>"; };
 		8BAA923F1BDB78A10064F694 /* LQYRecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQYRecommendViewController.m; sourceTree = "<group>"; };
 		8BAA92441BDB795B0064F694 /* LQYRecommendCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQYRecommendCell.h; sourceTree = "<group>"; };
@@ -597,6 +600,8 @@
 				8BD7F9DA1BE0694A0002CF5E /* LQYPictureViewController.m */,
 				8BD7F9DC1BE069550002CF5E /* LQYWordViewController.h */,
 				8BD7F9DD1BE069550002CF5E /* LQYWordViewController.m */,
+				8BA4D6901BEA558200806EF6 /* LQYTopicViewController.h */,
+				8BA4D6911BEA558200806EF6 /* LQYTopicViewController.m */,
 			);
 			name = Topic;
 			sourceTree = "<group>";
@@ -804,6 +809,7 @@
 				8B6455761BD73EBA009CB9D3 /* LQYMeViewController.m in Sources */,
 				8B6A08421BD7790D00BA98D1 /* LQYSettingController.m in Sources */,
 				8B6455741BD73EBA009CB9D3 /* LQYEssenceViewController.m in Sources */,
+				8BA4D6921BEA558200806EF6 /* LQYTopicViewController.m in Sources */,
 				8BFB724E1BDB0F0C0013D7A6 /* LQYLoginRegisterViewController.m in Sources */,
 				8B6455751BD73EBA009CB9D3 /* LQYFriendTrendsViewController.m in Sources */,
 				8B81ABA11BDC97F800FCAB70 /* UIImage+LQYExtension.m in Sources */,
