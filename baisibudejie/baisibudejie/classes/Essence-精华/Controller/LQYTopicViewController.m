@@ -12,6 +12,7 @@
 #import "LQYTopicCell.h"
 #import "LQYDIYHeader.h"
 #import "LQYDIYFooter.h"
+#import "LQYNewViewController.h"
 
 @interface LQYTopicViewController ()
 
@@ -26,6 +27,18 @@
 static NSString * const topicId = @"topicCell";
 
 @implementation LQYTopicViewController
+/**
+ *  参数a
+ */
+- (NSString *)paramA
+{
+    // isKindOfClass: 判断是否为[这种类型]或者是[这种类型的子类]
+    if ([self.parentViewController isKindOfClass:[LQYNewViewController class]]) {
+        return @"newlist";
+    }
+    
+    return @"list";
+}
 #pragma mark - 懒加载
 
 - (LQYTopicType)type {return 0;}
@@ -91,7 +104,7 @@ static NSString * const topicId = @"topicCell";
 {
     // 请求参数
     NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
-    parameters[@"a"] = @"list";
+    parameters[@"a"] = self.paramA;
     parameters[@"type"] = @(self.type);
     parameters[@"c"] = @"data";
     parameters[@"maxtime"] = self.maxtime;
@@ -131,7 +144,7 @@ static NSString * const topicId = @"topicCell";
 {
     // 请求参数
     NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
-    parameters[@"a"] = @"list";
+    parameters[@"a"] = self.paramA;
     parameters[@"c"] = @"data";
     parameters[@"type"] = @(self.type);
     

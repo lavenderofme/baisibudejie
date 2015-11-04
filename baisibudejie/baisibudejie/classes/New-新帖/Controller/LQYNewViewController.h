@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LQYEssenceViewController.h"
 
-@interface LQYNewViewController : UIViewController
+@interface LQYNewViewController :LQYEssenceViewController
 
 @end
